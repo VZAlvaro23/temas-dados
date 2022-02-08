@@ -1,0 +1,16 @@
+.btn-delete {
+  width: 4em;
+  height: 4em;
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: inherit;
+  background: var(--btn-delete-bg);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.delete-img {
+  width: 60%;
+}

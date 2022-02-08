@@ -1,0 +1,65 @@
+
+.btn {
+  position: relative;
+  width: 6em;
+  height: 6em;
+  padding: 2em 0 2em 0;
+  margin: 0 1em 0 1em;
+  font-size: inherit;
+  background: var(--btn-throw-bg);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.front-dice {
+  width: 2.5em;
+  height: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: red;
+  border-radius: 4px;
+  background: linear-gradient(
+    139.01deg,
+    #9ee8ff 3.03%,
+    #ffc9fd 65.71%,
+    #c7f1ff 159.02%
+  );
+  transform: rotate(-16deg);
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 100;
+}
+.back-dice {
+  width: 2.5em;
+  height: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: red;
+  border-radius: 4px;
+  background: linear-gradient(193.01deg, #7c89ff 9.39%, #87ec8b 137.84%);
+  transform: rotate(16deg);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 50;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot1,
+.dot3,
+.dot5,
+.dot7,
+.dot9 {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #00074a;
+}

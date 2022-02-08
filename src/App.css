@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+
+:root {
+  --bg-color: linear-gradient(180deg, #24243e 0%, #040a47 54.55%, #0f0c29 100%);
+  --main-font-color: #fff;
+  --font-family: "News Cycle", sans-serif;
+  /* Dice */
+  --dice-background: linear-gradient(174.56deg, #d6ffe1 2.1%, #6663dd 94.23%);
+  --dice-front: linear-gradient(
+    147.9deg,
+    #b4ffdb 1.74%,
+    #ffddfc 46.71%,
+    #6bdcff 92.62%
+  );
+  --dice-icon-color: #6248ff;
+  --dice-box-shadow: 10px 10px 45px rgba(0, 209, 255, 0.5);
+  /* Buttons */
+  --btn-delete-bg: linear-gradient(171.14deg, #ff416c -7.81%, #ff4b2b 108.5%);
+  --btn-add-bg: linear-gradient(139.94deg, #aaffa9 7.27%, #11ffbd 100%);
+  --btn-throw-bg: linear-gradient(132.98deg, #0d00a7 -35.88%, #e71bc6 210.13%);
+  --btn-delete-color: #c10000;
+  --btn-add-color: #339648;
+  /* Nav menu */
+  --menu-bg: linear-gradient(147.9deg, #5e1c97 1.74%, #300092 92.62%);
+  --link-active: #480030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--font-family);
+  color: var(--main-font-color);
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding: 2em 0 2em 0;
+  font-size: 2em;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.dice-container {
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

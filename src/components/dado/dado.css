@@ -1,0 +1,22 @@
+.back-face {
+    height: 10em;
+    width: 10em;
+    border-radius: 6px;
+    background: var(--dice-background);
+    box-shadow: var(--dice-box-shadow);
+}
+
+.front-face {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: inherit;
+    border-radius: 56px;
+    background: var(--dice-front);
+}
+
+.icono {
+    width: 4em;
+}

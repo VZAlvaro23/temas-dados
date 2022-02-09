@@ -1,6 +1,6 @@
 .back-face {
-    height: 10em;
-    width: 10em;
+    height: 10vw;
+    width: 10vw;
     margin: 1em;
     border-radius: 6px;
     background: var(--dice-background);
@@ -19,5 +19,27 @@
 }
 
 .icono {
-    height: 3em;
+    height: 30%;
+}
+
+@media (max-width: 450px) {
+  .back-face {
+    min-height: 30vw;
+    min-width: 30vw; 
+  }
+}
+
+@media (max-width: 750px) {
+  .back-face {
+    height: 15vw;
+    width: 15vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+    .back-face {
+    height: 15vw;
+    width: 15vw;
+  }
 }

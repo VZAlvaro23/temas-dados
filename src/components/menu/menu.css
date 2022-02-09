@@ -1,0 +1,21 @@
+.nav-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 6vw;
+  min-height: 50px;
+  width: 6vw;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+    font-size: inherit;
+  background: linear-gradient(147.9deg, #5e1c97 1.74%, #300092 92.62%);
+  cursor: pointer;
+}
+
+.nav-menu img {
+  width: 40%;
+
+}

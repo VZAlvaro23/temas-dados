@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 
+import Menu from "./components/menu/Menu";
 import Dado from "./components/dado/Dado";
 import Throw from "./components/buttons/throw/Throw";
 import Delete from "./components/buttons/delete/Delete";
@@ -22,8 +23,11 @@ function App() {
 
   return (
     <div className="App">
+      <nav>
+        <Menu />
+      </nav>
       <header>
-        <img className="title" src = {title} alt = "title" />
+        <img className="title" src={title} alt="title" />
       </header>
       <main className="dice-container">
         {dices.map((dice, index) => (
@@ -37,7 +41,7 @@ function App() {
           cont={cont}
           setCont={setCont}
         />
-        <Throw dices={dices} setDices = {setDices}/>
+        <Throw dices={dices} setDices={setDices} />
         <Add setDices={setDices} dices={dices} cont={cont} setCont={setCont} />
       </section>
     </div>

@@ -1,45 +1,55 @@
 .back-face {
-    height: 10vw;
-    width: 10vw;
-    margin: 1em;
-    border-radius: 6px;
-    background: var(--dice-background);
-    box-shadow: var(--dice-box-shadow);
+  height: 10vw;
+  width: 10vw;
+  margin: 1em;
+  border-radius: 6px;
+  background: var(--dice-background);
+  box-shadow: var(--dice-box-shadow);
 }
 
 .front-face {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-family: inherit;
-    border-radius: 56px;
-    background: var(--dice-front);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: inherit;
+  border-radius: 56px;
+  background: var(--dice-front);
 }
 
 .icono {
-    height: 30%;
+  height: 30%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1050px) {
   .back-face {
-    min-height: 30vw;
-    min-width: 30vw; 
+    height: 15vw;
+    width: 15vw;
   }
 }
 
 @media (max-width: 750px) {
   .back-face {
-    height: 15vw;
-    width: 15vw;
+    height: 100px;
+    width: 100px;
     margin: 0;
   }
 }
 
-@media (max-width: 1050px) {
-    .back-face {
-    height: 15vw;
-    width: 15vw;
+@media (max-height: 700px) {
+  .back-face {
+    min-height: 25vw;
+    min-width: 25vw;
   }
 }
+
+@media (max-width: 450px) {
+  .back-face {
+    min-height: 22vw;
+    min-width: 22vw;
+  }
+}
+
+
+

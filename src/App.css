@@ -35,6 +35,7 @@
 
 body {
   min-height: 100vh;
+  max-height: 100vh;
   font-size: 100%;
   font-family: var(--font-family);
   color: var(--main-font-color);
@@ -53,10 +54,10 @@ header {
   position: absolute;
   top: 2em;
   width: 20%;
+  min-width: 240px;
 }
 
 .dice-container {
-  margin-top: 2em;
   display: flex;
   justify-content: center;
 }
@@ -68,19 +69,13 @@ header {
   align-items: center;
 }
 
-@media screen and (max-width: 450px) {
-  .title {
-    width: 50%;
-  }
-}
-
 @media screen and (max-width: 750px) {
   .title {
-    top: 1em;
-    width: 30%;
+    top: 0;
+    min-width: 150px;
   }
   .dice-container {
-    margin-top: 7em;
+    /* margin-top: 7em; */
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -90,3 +85,14 @@ header {
   }
 }
 
+@media (max-height: 750px) {
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    min-width: 40%;
+  }
+}

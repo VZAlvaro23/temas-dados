@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/temas-dados/static/css/main.b5fa7ff8.css",
+    "main.js": "/temas-dados/static/js/main.b0174331.js",
+    "static/media/title.png": "/temas-dados/static/media/title.6e2d06814e0de2246a32.png",
+    "index.html": "/temas-dados/index.html",
+    "main.b5fa7ff8.css.map": "/temas-dados/static/css/main.b5fa7ff8.css.map",
+    "main.b0174331.js.map": "/temas-dados/static/js/main.b0174331.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5fa7ff8.css",
+    "static/js/main.b0174331.js"
+  ]
+}

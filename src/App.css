@@ -43,11 +43,14 @@ body {
   justify-content: center;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   padding: 2em 0 2em 0;
-  font-size: 2em;
-  font-weight: inherit;
-  text-align: center;
+  width: 15em;
 }
 
 .dice-container {
@@ -61,4 +64,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 450px) {
+  .title {
+    padding: 4em 0 2em 0;
+  }
 }

@@ -1,10 +1,20 @@
+
 import "./throw.css";
 
-const Throw = ({ setNumber }) => {
+const Throw = ({dices, setDices}) => {
+  const throwDices = () => {
+    dices.map((dice, index) => {
+      dice.imgUrl = require("../../../assets/dice" + index + "/" +
+        Math.floor(Math.random() * 6) +
+        ".png");
+    })
+    setDices([...dices])
+  }
+
   return (
     <article>
       <button
-        onClick={() => setNumber(Math.ceil(Math.random() * 5))}
+        onClick={() => throwDices()}
         className="btn"
       >
         <div className="front-dice">

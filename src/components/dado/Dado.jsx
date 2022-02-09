@@ -1,14 +1,14 @@
 import "./dado.css";
 
-const Dado = ({ number }) => {
+const Dado = ({ imgUrl, alt }) => {
   return (
     <article>
       <div className="back-face">
         <div className="front-face">
           <img
             className="icono"
-            src={require("../../assets/dice1/" + number + ".png")}
-            alt="icono"
+            src={imgUrl}
+            alt={alt}
           />
         </div>
       </div>

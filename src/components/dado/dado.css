@@ -1,6 +1,7 @@
 .back-face {
     height: 10em;
     width: 10em;
+    margin: 1em;
     border-radius: 6px;
     background: var(--dice-background);
     box-shadow: var(--dice-box-shadow);
@@ -18,5 +19,5 @@
 }
 
 .icono {
-    width: 4em;
+    height: 3em;
 }

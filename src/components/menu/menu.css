@@ -1,7 +1,7 @@
 .nav-menu {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 2vw;
+  left: 2vw;
   height: 6vw;
   min-height: 50px;
   width: 6vw;
@@ -17,5 +17,7 @@
 
 .nav-menu img {
   width: 40%;
-
 }
+
+
+

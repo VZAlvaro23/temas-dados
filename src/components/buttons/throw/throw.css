@@ -1,10 +1,9 @@
-
 .btn {
   position: relative;
-  width: 6em;
-  height: 6em;
-  padding: 2em 0 2em 0;
-  margin: 0 1em 0 1em;
+  width: 7.5vw;
+  height: 7.5vw;
+  padding: 1vh 0 1vh 0;
+  margin: 0 1vw 0 1vw;
   font-size: inherit;
   background: var(--btn-throw-bg);
   border-radius: 9px;
@@ -12,8 +11,8 @@
 }
 
 .front-dice {
-  width: 2.5em;
-  height: 2.5em;
+  width: 40%;
+  height: 40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -27,13 +26,13 @@
   );
   transform: rotate(-16deg);
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 15%;
+  left: 15%;
   z-index: 100;
 }
 .back-dice {
-  width: 2.5em;
-  height: 2.5em;
+  width: 40%;
+  height: 40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -42,8 +41,8 @@
   background: linear-gradient(193.01deg, #7c89ff 9.39%, #87ec8b 137.84%);
   transform: rotate(16deg);
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 15%;
+  right: 15%;
   z-index: 50;
 }
 
@@ -62,4 +61,11 @@ span {
   height: 60%;
   border-radius: 50%;
   background-color: #00074a;
+}
+
+@media screen and (max-width: 750px) {
+  .btn {
+    width: 7.5vh;
+    height: 7.5vh;
+  }
 }

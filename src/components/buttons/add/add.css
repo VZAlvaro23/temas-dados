@@ -1,7 +1,7 @@
 .btn-add {
-  width: 4em;
-  height: 4em;
-  padding: 2em 0 2em 0;
+  width: 5vw;
+  height: 5vw;
+  /* padding: 2em 0 2em 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +13,11 @@
 
 .add-img {
   width: 60%;
+}
+
+@media screen and (max-width: 750px) {
+  .btn-add {
+    width: 5vh;
+    height: 5vh;
+  }
 }

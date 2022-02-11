@@ -1,22 +1,21 @@
-
 import "./throw.css";
 
-const Throw = ({dices, setDices}) => {
+const Throw = ({ dices, setDices, getRandomWord }) => {
   const throwDices = () => {
     dices.map((dice, index) => {
-      dice.imgUrl = require("../../../assets/dice" + index + "/" +
+      dice.imgUrl = require("../../../assets/dice" +
+        index +
+        "/" +
         Math.floor(Math.random() * 6) +
         ".png");
-    })
-    setDices([...dices])
-  }
+    });
+    setDices([...dices]);
+  };
 
   return (
     <article>
-      <button
-        onClick={() => throwDices()}
-        className="btn"
-      >
+      <button onClick={() => {throwDices();
+      getRandomWord()}} className="btn">
         <div className="front-dice">
           <span>
             <div className="dot1"></div>

@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
 import Menu from "./components/menu/Menu";
-import Dado from "./components/dado/Dado";
+import Dados from "./components/dados/Dados";
 import Throw from "./components/buttons/throw/Throw";
 import Delete from "./components/buttons/delete/Delete";
 import Add from "./components/buttons/add/Add";
+import Word from "./components/word/Word";
 
 import title from "./assets/title.png";
 
@@ -20,31 +23,59 @@ function App() {
     },
   ]);
   const [cont, setCont] = useState(1);
+  const [word, setWord] = useState("");
 
+  const [data, setData] = useState(null);
+  const getRandomWord = () => {
+    fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw Response;
+      })
+      .then((data) => {
+        setData(data);
+        setWord(data.body.Word);
+      });
+  };
+
+  useEffect(() => {
+    getRandomWord();
+  }, []);
   return (
-    <div className="App">
-      <nav>
+    <Router>
+      <div className="App">
         <Menu />
-      </nav>
-      <header>
-        <img className="title" src={title} alt="title" />
-      </header>
-      <main className="dice-container">
-        {dices.map((dice, index) => (
-          <Dado imgUrl={dice.imgUrl} alt={dice.alt} key={index} />
-        ))}
-      </main>
-      <section className="buttons">
-        <Delete
-          setDices={setDices}
-          dices={dices}
-          cont={cont}
-          setCont={setCont}
-        />
-        <Throw dices={dices} setDices={setDices} />
-        <Add setDices={setDices} dices={dices} cont={cont} setCont={setCont} />
-      </section>
-    </div>
+        <header>
+          <img className="title" src={title} alt="title" />
+        </header>
+        <main className="dice-container">
+          <Routes>
+            <Route
+              path="/temas-dados"
+              element={<Dados dices={dices} />}
+            ></Route>
+            <Route path="/words" element={<Word word={word}></Word>}></Route>
+          </Routes>
+        </main>
+        <section className="buttons">
+          <Delete
+            setDices={setDices}
+            dices={dices}
+            cont={cont}
+            setCont={setCont}
+          />
+          <Throw dices={dices} setDices={setDices} getRandomWord={getRandomWord} />
+          <Add
+            setDices={setDices}
+            dices={dices}
+            cont={cont}
+            setCont={setCont}
+          />
+        </section>
+      </div>
+    </Router>
   );
 }
 

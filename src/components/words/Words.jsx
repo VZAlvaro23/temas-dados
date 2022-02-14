@@ -4,7 +4,7 @@ const Words = ({ words, word }) => {
   return (
     <>
       {words.map((term, index) => (
-        <Word word={word} key={index} />
+        <Word word={term} key={index} />
       ))}
     </>
   );

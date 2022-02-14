@@ -3,7 +3,16 @@ import "./add.css";
 import addImg from "../../../assets/buttons/add.png";
 import Words from "../../words/Words";
 
-const Add = ({ dices, setDices, cont, setCont, words, word, setWords, getRandomWord }) => {
+const Add = ({
+  dices,
+  setDices,
+  cont,
+  setCont,
+  words,
+  word,
+  setWords,
+  getRandomWord,
+}) => {
   const addDice = () => {
     if (dices.length <= 4) {
       setCont(cont + 1);
@@ -18,8 +27,8 @@ const Add = ({ dices, setDices, cont, setCont, words, word, setWords, getRandomW
           alt: "icon",
         },
       ]);
-      setWords([...words
-      ])
+      getRandomWord();
+      // setWords([...words, word]);
     }
   };
   return (

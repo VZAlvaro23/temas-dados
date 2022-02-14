@@ -1,6 +1,7 @@
+import { useEffect, useState } from "react";
 import "./throw.css";
 
-const Throw = ({ dices, setDices, getRandomWord }) => {
+const Throw = ({ dices, setDices, words, setWords, setData, getRandomWord }) => {
   const throwDices = () => {
     dices.map((dice, index) => {
       dice.imgUrl = require("../../../assets/dice" +
@@ -10,12 +11,34 @@ const Throw = ({ dices, setDices, getRandomWord }) => {
         ".png");
     });
     setDices([...dices]);
+    words.map((word, index) => {
+    fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw Response;
+      })
+      .then((data) => {
+        setData(data);
+        words[index] = data.body.Word;
+        setWords([...words]);
+      }); 
+    });
   };
+
+  useEffect(() => {
+
+  }, [words]);
 
   return (
     <article>
-      <button onClick={() => {throwDices();
-      getRandomWord()}} className="btn">
+      <button
+        onClick={() => {
+          throwDices();
+        }}
+        className="btn"
+      >
         <div className="front-dice">
           <span>
             <div className="dot1"></div>

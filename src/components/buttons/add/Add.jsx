@@ -1,8 +1,9 @@
 import "./add.css";
 
 import addImg from "../../../assets/buttons/add.png";
+import Words from "../../words/Words";
 
-const Add = ({ dices, setDices, cont, setCont }) => {
+const Add = ({ dices, setDices, cont, setCont, words, word, setWords, getRandomWord }) => {
   const addDice = () => {
     if (dices.length <= 4) {
       setCont(cont + 1);
@@ -17,6 +18,8 @@ const Add = ({ dices, setDices, cont, setCont }) => {
           alt: "icon",
         },
       ]);
+      setWords([...words
+      ])
     }
   };
   return (

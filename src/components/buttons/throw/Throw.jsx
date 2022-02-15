@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./throw.css";
 
-const Throw = ({ dices, setDices, words, setWords, setData, getRandomWord }) => {
+const Throw = ({ dices, setDices, words, setWords, setData }) => {
   const throwDices = () => {
     dices.map((dice, index) => {
       dice.imgUrl = require("../../../assets/dice" +
@@ -23,13 +23,16 @@ const Throw = ({ dices, setDices, words, setWords, setData, getRandomWord }) => 
         setData(data);
         words[index] = data.body.Word;
         setWords([...words]);
-      }); 
+      });                         
     });
+
   };
-
   useEffect(() => {
+throwDices();
+  }, []);
 
-  }, [words]);
+
+
 
   return (
     <article>

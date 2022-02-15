@@ -6,11 +6,10 @@ import "./App.css";
 
 import Menu from "./components/menu/Menu";
 import Dados from "./components/dados/Dados";
-import Throw from "./components/buttons/throw/Throw";
-import Delete from "./components/buttons/delete/Delete";
-import Add from "./components/buttons/add/Add";
-// import Word from "./components/word/Word";
 import Words from "./components/words/Words";
+import Delete from "./components/buttons/delete/Delete";
+import Throw from "./components/buttons/throw/Throw";
+import Add from "./components/buttons/add/Add";
 
 import title from "./assets/title.png";
 
@@ -23,12 +22,10 @@ function App() {
       alt: "icon",
     },
   ]);
-  const [cont, setCont] = useState(1);
-
-  // const [word, setWord] = useState("");
   const [words, setWords] = useState([]);
-
+  const [cont, setCont] = useState(1);
   const [data, setData] = useState(null);
+
   const getRandomWord = () => {
     fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
       .then((response) => {
@@ -42,6 +39,8 @@ function App() {
         setWords([...words, data.body.Word]);
       });
   };
+
+
 
   useEffect(() => {
     getRandomWord();
@@ -69,7 +68,9 @@ function App() {
         <section className="buttons">
           <Delete
             setDices={setDices}
+            setWords={setWords}
             dices={dices}
+            words= {words}
             cont={cont}
             setCont={setCont}
           />

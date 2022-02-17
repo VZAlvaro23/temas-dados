@@ -1,10 +1,10 @@
 import Word from "../word/Word";
 
-const Words = ({ words, word }) => {
+const Words = ({ words }) => {
   return (
     <>
-      {words.map((term, index) => (
-        <Word word={term} key={index} />
+      {words.map((word, index) => (
+        <Word word={word} key={index} />
       ))}
     </>
   );

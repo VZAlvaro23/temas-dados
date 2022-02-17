@@ -24,7 +24,6 @@ function App() {
   ]);
   const [words, setWords] = useState([]);
   const [cont, setCont] = useState(1);
-  const [data, setData] = useState(null);
 
   const getRandomWord = () => {
     fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
@@ -35,12 +34,9 @@ function App() {
         throw Response;
       })
       .then((data) => {
-        setData(data);
         setWords([...words, data.body.Word]);
       });
   };
-
-
 
   useEffect(() => {
     getRandomWord();
@@ -52,19 +48,17 @@ function App() {
         <Menu />
         <header>
           <img className="title" src={title} alt="title" />
-        </header>
-        <main className="dice-container">
+        </header> 
           <Routes>
             <Route
               path="/temas-dados"
-              element={<Dados dices={dices} />}
+              element={<main className="dices-container"><Dados dices={dices} /></main>}
             ></Route>
             <Route
               path="/words"
-              element={<Words words={words}></Words>}
+              element={<main className = "words-container"><Words words={words}></Words></main>}
             ></Route>
           </Routes>
-        </main>
         <section className="buttons">
           <Delete
             setDices={setDices}
@@ -80,13 +74,11 @@ function App() {
             getRandomWord={getRandomWord}
             words={words}
             setWords={setWords}
-            setData={setData}
           />
           <Add
             setDices={setDices}
             setWords={setWords}
             words={words}
-            // word={word}
             dices={dices}
             cont={cont}
             setCont={setCont}

@@ -1,8 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./throw.css";
 
-const Throw = ({ dices, setDices, words, setWords, setData }) => {
-  const throwDices = () => {
+const Throw = ({
+  dices,
+  setDices,
+  words,
+  setWords,
+}) => {
+  const throwDices = async () => {
     dices.map((dice, index) => {
       dice.imgUrl = require("../../../assets/dice" +
         index +
@@ -11,28 +16,34 @@ const Throw = ({ dices, setDices, words, setWords, setData }) => {
         ".png");
     });
     setDices([...dices]);
-    words.map((word, index) => {
-    fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw Response;
-      })
+    let promises = [];
+    let currentPage = 1;
+
+    while (currentPage <= words.length) {
+      promises.push(
+        fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
+      );
+      currentPage++;
+    }
+
+    // wait for all promises to fullfil
+    Promise.all(promises)
+      .then((responses) =>
+        // Get a JSON object from each of the responses
+        Promise.all(responses.map((response) => response.json()))
+      )
       .then((data) => {
-        setData(data);
-        words[index] = data.body.Word;
-        setWords([...words]);
-      });                         
-    });
-
+        // Get all the data and store it in our useState
+        const results = data.map(({ body }) => body.Word);
+        setWords(results);
+      });
   };
+
   useEffect(() => {
-throwDices();
-  }, []);
-
-
-
+    if (!words) {
+      throwDices();
+    }
+  }, [words]);
 
   return (
     <article>

@@ -1,10 +1,21 @@
 .word-container {
-    height: 100%;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 50.58%, rgba(0, 0, 0, 0) 100%);
-    align-self: center;
+  padding: 1em;
+  width: 100%;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0%,
+    #000000 50.58%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .word {
-    font-size: 8vh;
-    padding: 1vh 6vw 1vh 6vw;
-    text-transform: uppercase;
+  font-size: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+  .word {
+    font-size: 6vh;
+  }
 }

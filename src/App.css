@@ -56,9 +56,15 @@ header {
   width: 20vw;
 }
 
-.dice-container {
+.dices-container {
   display: flex;
   justify-content: center;
+}
+
+.words-container {
+  width: 80vw;
+  display: flex;
+  /* justify-content: center;  */
 }
 
 .buttons {
@@ -73,10 +79,14 @@ header {
     top: 0;
     width: 20vh;
   }
-  .dice-container {
+  .dices-container {
     margin-top: 7em;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .words-container {
+    width: auto;
+    flex-direction: column-reverse;
   }
 
   body {
@@ -84,7 +94,7 @@ header {
   }
 }
 
- @media (max-height: 650px) {
+@media (max-height: 650px) {
   .title {
     display: none;
   }

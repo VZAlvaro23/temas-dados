@@ -1,0 +1,9 @@
+.pic-container {
+
+}
+
+.pic-container img {
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+}

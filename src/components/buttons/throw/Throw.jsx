@@ -6,6 +6,10 @@ const Throw = ({
   setDices,
   words,
   setWords,
+  getRandomPic,
+  unsplash,
+  pics,
+  setPics,
 }) => {
   const throwDices = async () => {
     dices.map((dice, index) => {
@@ -25,7 +29,6 @@ const Throw = ({
       );
       currentPage++;
     }
-
     // wait for all promises to fullfil
     Promise.all(promises)
       .then((responses) =>
@@ -37,6 +40,16 @@ const Throw = ({
         const results = data.map(({ body }) => body.Word);
         setWords(results);
       });
+    let picsNumber = pics.length;
+    unsplash.photos.getRandom({ count: picsNumber }).then((result) => {
+      if (result.type === "success") {
+        const results = result.response.map(({ urls, user }) => ({
+          imgUrl: urls.raw,
+          alt: user.username,
+        }));
+        setPics(results);
+      }
+    });
   };
 
   useEffect(() => {

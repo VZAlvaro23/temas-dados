@@ -64,8 +64,14 @@ header {
 .words-container {
   width: 80vw;
   display: flex;
-  /* justify-content: center;  */
 }
+
+.pics-container {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .buttons {
   padding: 2em 0 2em 0;

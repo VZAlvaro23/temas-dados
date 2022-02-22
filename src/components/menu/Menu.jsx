@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 import "./menu.css";
 
 import menu from "../../assets/menu.png";
@@ -33,13 +32,19 @@ const Menu = () => {
         ></img>
         <ul className={!isActive ? "no-display" : ""}>
           <li>
-            <Link to="/temas-dados">Iconos</Link>
+            <Link to="/temas-dados" onClick={unFoldMenu}>
+              Iconos
+            </Link>
           </li>
           <li>
-            <Link to="/words">Palabras</Link>
+            <Link to="/words" onClick={unFoldMenu}>
+              Palabras
+            </Link>
           </li>
           <li>
-            <Link to="/pics">Imágenes</Link>
+            <Link to="/pics" onClick={unFoldMenu}>
+              Imágenes
+            </Link>
           </li>
         </ul>
       </div>

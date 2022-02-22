@@ -1,17 +1,14 @@
 import "./add.css";
 
 import addImg from "../../../assets/buttons/add.png";
-import Words from "../../words/Words";
 
 const Add = ({
   dices,
   setDices,
   cont,
   setCont,
-  words,
-  word,
-  setWords,
   getRandomWord,
+  getRandomPic
 }) => {
   const addDice = () => {
     if (dices.length <= 4) {
@@ -28,7 +25,7 @@ const Add = ({
         },
       ]);
       getRandomWord();
-      // setWords([...words, word]);
+      getRandomPic();
     }
   };
   return (

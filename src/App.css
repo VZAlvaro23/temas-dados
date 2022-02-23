@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
 
 :root {
-  --bg-color: linear-gradient(180deg, #24243e 0%, #040a47 54.55%, #0f0c29 100%);
+  --bg-color: radial-gradient(101.37% 101.37% at 50% 100%, #7BFFE7 0%, #10385E 64.78%, #000000 100%);;
   --main-font-color: #fff;
   --font-family: "News Cycle", sans-serif;
   /* Dice */

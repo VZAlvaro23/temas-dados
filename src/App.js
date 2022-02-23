@@ -13,8 +13,6 @@ import Delete from "./components/buttons/delete/Delete";
 import Throw from "./components/buttons/throw/Throw";
 import Add from "./components/buttons/add/Add";
 
-import title from "./assets/title.png";
-
 function App() {
   const [dices, setDices] = useState([]);
   const [cont, setCont] = useState(1);
@@ -53,7 +51,8 @@ function App() {
       if (result.type === "success") {
         const imgUrl = result.response.urls.small;
         const alt = result.response.user.username;
-        setPics([...pics, 
+        setPics([
+          ...pics,
           {
             imgUrl: imgUrl,
             alt: alt,
@@ -74,7 +73,7 @@ function App() {
       <div className="App">
         <Menu />
         <header>
-          <img className="title" src={title} alt="title" />
+          <h1>Rama master</h1>
         </header>
         <Routes>
           <Route
@@ -110,8 +109,8 @@ function App() {
             words={words}
             cont={cont}
             setCont={setCont}
-            pics = {pics}
-            setPics = {setPics}
+            pics={pics}
+            setPics={setPics}
           />
           <Throw
             dices={dices}
@@ -119,10 +118,10 @@ function App() {
             getRandomWord={getRandomWord}
             words={words}
             setWords={setWords}
-            getRandomPic = {getRandomPic}
-            unsplash = {unsplash}
-            pics = {pics}
-            setPics = {setPics}
+            getRandomPic={getRandomPic}
+            unsplash={unsplash}
+            pics={pics}
+            setPics={setPics}
           />
           <Add
             setDices={setDices}
@@ -132,7 +131,7 @@ function App() {
             cont={cont}
             setCont={setCont}
             getRandomWord={getRandomWord}
-            getRandomPic = {getRandomPic}
+            getRandomPic={getRandomPic}
           />
         </section>
       </div>

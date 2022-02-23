@@ -6,7 +6,6 @@ const Throw = ({
   setDices,
   words,
   setWords,
-  getRandomPic,
   unsplash,
   pics,
   setPics,

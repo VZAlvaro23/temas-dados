@@ -73,7 +73,7 @@ function App() {
       <div className="App">
         <Menu />
         <header>
-          <h1>Rama master</h1>
+          <h1>Diseño básico</h1>
         </header>
         <Routes>
           <Route

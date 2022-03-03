@@ -1,0 +1,13 @@
+.timer-btn {
+  width: 5vh;
+  height: 5vh;
+  color: #fff;
+  border: 4px solid white;
+  border-radius: 6px;
+  align-self: center;
+  /* margin: 0 3vw 0 3vw; */
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  right: -7vh;
+}

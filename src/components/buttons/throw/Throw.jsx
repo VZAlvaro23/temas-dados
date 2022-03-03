@@ -1,5 +1,8 @@
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./throw.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiceFive } from "@fortawesome/free-solid-svg-icons";
 
 const Throw = ({
   dices,
@@ -9,6 +12,7 @@ const Throw = ({
   unsplash,
   pics,
   setPics,
+  seconds,
 }) => {
   const throwDices = async () => {
     dices.map((dice, index) => {
@@ -39,17 +43,41 @@ const Throw = ({
         const results = data.map(({ body }) => body.Word);
         setWords(results);
       });
-    let picsNumber = pics.length;
-    unsplash.photos.getRandom({ count: picsNumber }).then((result) => {
-      if (result.type === "success") {
-        const results = result.response.map(({ urls, user }) => ({
-          imgUrl: urls.raw,
-          alt: user.username,
-        }));
-        setPics(results);
-      }
-    });
+    // let picsNumber = pics.length;
+    // unsplash.photos.getRandom({ count: picsNumber }).then((result) => {
+    //   if (result.type === "success") {
+    //     const results = result.response.map(({ urls, user }) => ({
+    //       imgUrl: urls.raw,
+    //       alt: user.username,
+    //     }));
+    //     setPics(results);
+    //   }
+    // });
   };
+
+  const [clicked, setClicked] = useState(false);
+  const interval = useRef();
+  const throwTimer = () => {
+    if (clicked) {
+      setClicked(false);
+      console.log(interval);
+      clearInterval(interval.current);
+    } else {
+      
+      if (seconds !== 0) {
+        setClicked(true);
+        interval.current = setInterval(() => {
+          throwDices();
+        }, seconds * 1000);
+      } else throwDices()
+    }
+  };
+
+  // const clear = () => {
+  //   setClicked(false);
+  //   // clearInterval(throwTimer);
+  //   console.log(intervaloso)
+  // };
 
   useEffect(() => {
     if (!words) {
@@ -57,62 +85,17 @@ const Throw = ({
     }
   }, [words]);
 
+  const diceFive = <FontAwesomeIcon icon={faDiceFive} />;
+
   return (
     <article>
       <button
         onClick={() => {
-          throwDices();
+          throwTimer();
         }}
-        className="btn"
+        className={clicked ? "btn spinner" : "btn"}
       >
-        <div className="front-dice">
-          <span>
-            <div className="dot1"></div>
-          </span>
-          <span></span>
-          <span>
-            <div className="dot3"></div>
-          </span>
-          <span>
-            <div className="dot4"></div>
-          </span>
-          <span>
-            <div className="dot5"></div>
-          </span>
-          <span>
-            <div className="dot6"></div>
-          </span>
-          <span>
-            <div className="dot7"></div>
-          </span>
-          <span></span>
-          <span>
-            <div className="dot9"></div>
-          </span>
-        </div>
-        <div className="back-dice">
-          <span>
-            <div className="dot1"></div>
-          </span>
-          <span></span>
-          <span>
-            <div></div>
-          </span>
-          <span>
-            <div className="dot4"></div>
-          </span>
-          <span>
-            <div className="dot5"></div>
-          </span>
-          <span>
-            <div className="dot6"></div>
-          </span>
-          <span></span>
-          <span></span>
-          <span>
-            <div className="dot9"></div>
-          </span>
-        </div>
+        {diceFive}
       </button>
     </article>
   );

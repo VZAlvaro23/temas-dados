@@ -1,66 +1,37 @@
 .btn {
   position: relative;
-  width: 7.5vw;
-  height: 7.5vw;
-  padding: 1vh 0 1vh 0;
-  margin: 0 1vw 0 1vw;
-  font-size: inherit;
-  background: var(--btn-throw-bg);
-  border-radius: 9px;
+  width: 6vw;
+  height: 6vw;
+  color: #fff;
+  margin: 0 3vw 0 3vw;
+  background: none;
   cursor: pointer;
+  transition: 0.25s;
 }
 
-.front-dice {
-  width: 40%;
-  height: 40%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background: red;
-  border-radius: 4px;
-  background: linear-gradient(
-    139.01deg,
-    #9ee8ff 3.03%,
-    #ffc9fd 65.71%,
-    #c7f1ff 159.02%
-  );
-  transform: rotate(-16deg);
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
-  z-index: 100;
-}
-.back-dice {
-  width: 40%;
-  height: 40%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background: red;
-  border-radius: 4px;
-  background: linear-gradient(193.01deg, #7c89ff 9.39%, #87ec8b 137.84%);
-  transform: rotate(16deg);
-  position: absolute;
-  top: 15%;
-  right: 15%;
-  z-index: 50;
+.fa-dice-five {
+  width: 100%;
+  height: 100%;
+  /* filter: drop-shadow(0px 20px 10px rgba(0, 86, 105, 0.69)); */
+  
 }
 
-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.spinner {
+animation: spin 5s infinite linear;
 }
 
-.dot1,
-.dot3,
-.dot5,
-.dot7,
-.dot9 {
-  width: 60%;
-  height: 60%;
-  border-radius: 50%;
-  background-color: #00074a;
+/* .fa-dice-five:hover {
+  filter: drop-shadow(0px 20px 10px rgba(0, 86, 105, 0.69));
+  transform: translateY(-0.25em);
+} */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 750px) {

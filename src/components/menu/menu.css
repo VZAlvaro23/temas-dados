@@ -1,17 +1,16 @@
 .nav-menu {
   position: absolute;
-  top: 2vw;
-  left: 2vw;
-  height: 6vw;
-  min-height: 50px;
-  width: 6vw;
-  min-width: 50px;
+  top: 4vh;
+  left: 4vh;
+  height: 8vh;
+  width: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  background: linear-gradient(147.9deg, #5e1c97 1.74%, #300092 92.62%);
+  border-radius: 4vh;
+  background: white;
   cursor: pointer;
+  filter: drop-shadow(0px 0px 40px rgb(91, 89, 206));
 }
 
 .nav-menu img {
@@ -28,15 +27,35 @@
 
 .nav-menu-links {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1vh 0 1vh;
-  border-radius: 10px;
-  background: linear-gradient(147.9deg, #5e1c97 1.74%, #300092 92.62%);
+  height: 30vmin;
+  max-width: 30vmin;
+  border-radius: 50%;
+  top: 4vh;
+  /* left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  /* top: 0;
+  left: 0; */
+  /* padding: 1vh 0 1vh; */
+  /* border-radius: 10px; */
+  background: #000000;
+  transition: width 8s ease;
+  z-index: 100;
+  overflow: hidden;
 }
 
 .nav-menu-links ul {
   list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav-menu-links ul li {
@@ -45,13 +64,13 @@
 }
 
 .nav-menu-links a {
-  font-size: inherit;
-  color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3vh;
+  color: inherit;
 }
 
 .nav-menu-links a:hover {
-  color: #480030;
   text-decoration: underline;
 }
 
@@ -59,25 +78,31 @@
   right: 1vh;
   top: 1vh;
   position: absolute;
-  width: 10%;
+  width: 3vh;
+  cursor: pointer;
 }
 
 .no-size {
   width: 0%;
-  height: 0%;
+  /* opacity: 0; */
+  /* box-shadow: none; */
+  /* height: 0%; */
+  /* clip-path: circle(0% at 50% 50%); */
+  /* clip-path: circle(50.0% at -50% 50%); */
+  /* display: none; */
+
+  /* width: 0;
+  height: 0; */
 }
 
 .yes-size {
-  width: auto;
-  height: auto;
+  /* clip-path: circle(100% at 50% 50%); */
+  width: 100%;
+  /* clip-path: circle(100.0% at 50% 50%); */
+
+  /* box-shadow: 0px 0px 100px #CD6F00; */
 }
 
 .no-display {
   display: none;
-}
-
-@media (max-width: 750px) {
-  .nav-menu  {
-    background: transparent;
-  }
 }

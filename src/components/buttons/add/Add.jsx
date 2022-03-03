@@ -2,13 +2,17 @@ import "./add.css";
 
 import addImg from "../../../assets/buttons/add.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
 const Add = ({
   dices,
   setDices,
   cont,
   setCont,
   getRandomWord,
-  getRandomPic
+  getRandomPic,
+  words,
 }) => {
   const addDice = () => {
     if (dices.length <= 4) {
@@ -24,14 +28,19 @@ const Add = ({
           alt: "icon",
         },
       ]);
-      getRandomWord();
+
       getRandomPic();
     }
+    if (words.length <= 5) {
+      getRandomWord();
+    }
   };
+  const plus = <FontAwesomeIcon icon={faPlus} />;
+
   return (
     <article>
       <button className="btn-add" onClick={addDice}>
-        <img className="add-img" src={addImg} alt="add-img" />
+        {plus}
       </button>
     </article>
   );

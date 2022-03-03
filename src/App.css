@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Shadows+Into+Light&display=swap");
 
 :root {
-  --bg-color: radial-gradient(101.37% 101.37% at 50% 100%, #7BFFE7 0%, #10385E 64.78%, #000000 100%);;
+  --bg-color: radial-gradient(
+    101.37% 101.37% at 50% 100%,
+    #7bffe7 0%,
+    #10385e 64.78%,
+    #000000 100%
+  );
   --main-font-color: #fff;
-  --font-family: "News Cycle", sans-serif;
+  --font-family: "Raleway", sans-serif;
   /* Dice */
   --dice-background: linear-gradient(174.56deg, #d6ffe1 2.1%, #6663dd 94.23%);
   --dice-front: linear-gradient(
@@ -42,19 +47,36 @@ body {
   background: var(--bg-color);
   display: flex;
   justify-content: center;
+}
+
+.App {
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 header {
   display: flex;
   justify-content: center;
+  
 }
 
 .title {
-  position: absolute;
-  top: 1vh;
-  width: 20vw;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 100;
+  font-size: 3em;
+  text-shadow: 0px 0px 36px #00F0FF;
+  /* position: absolute; */
+  /* top: 1vh;
+  width: 20vw; */
 }
+/* .title img {
+  filter: drop-shadow(0px 0px 60px #13F1FF);
+} */
 
 .dices-container {
   display: flex;
@@ -62,8 +84,14 @@ header {
 }
 
 .words-container {
-  width: 80vw;
-  display: flex;
+  min-width: 60vw;
+  max-width: 90vw;
+  font-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, auto));
+  grid-row-gap: 3em;
+  /* overflow-wrap: break-word; */
+  hyphens: auto;
 }
 
 .pics-container {
@@ -71,16 +99,17 @@ header {
   justify-content: center;
 }
 
-
-
 .buttons {
-  padding: 2em 0 2em 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 @media screen and (max-width: 750px) {
+  .App {
+    justify-content: end;
+  }
   .title {
     top: 0;
     width: 20vh;
@@ -92,11 +121,25 @@ header {
   }
   .words-container {
     width: auto;
+    min-width: auto;
+    max-width: auto;
+    display: flex;
     flex-direction: column-reverse;
+    row-gap: 0;
+  }
+  .buttons {
+    padding: 2vh 0 2vh 0;
   }
 
   body {
     align-items: end;
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      #77046b 34.5%,
+      #0778df 64.73%,
+      #00ffc2 112.28%
+    );
   }
 }
 

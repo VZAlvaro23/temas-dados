@@ -4,6 +4,7 @@ import { createApi } from "unsplash-js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import "./stars.css";
 
 import Menu from "./components/menu/Menu";
 import Dados from "./components/dados/Dados";
@@ -12,12 +13,16 @@ import Pics from "./components/pics/Pics";
 import Delete from "./components/buttons/delete/Delete";
 import Throw from "./components/buttons/throw/Throw";
 import Add from "./components/buttons/add/Add";
+import Timer from "./components/buttons/timer/Timer";
+
+// import titleImage from "./assets/title-dice.png";
 
 function App() {
   const [dices, setDices] = useState([]);
   const [cont, setCont] = useState(1);
   const [words, setWords] = useState([]);
   const [pics, setPics] = useState([]);
+  const [seconds, setSeconds] = useState(0);
 
   const getRandomDice = () => {
     setDices([
@@ -71,9 +76,23 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="background-stars">
+          <div className="star1"></div>
+          <div className="star1"></div>
+          <div className="star2"></div>
+          <div className="star2"></div>
+          <div className="star3"></div>
+          <div className="star3"></div>
+          <div className="star4"></div>
+          <div className="star4"></div>
+          <div className="star5"></div>
+          <div className="star5"></div>
+        </div>
         <Menu />
         <header>
-          <h1>Diseño nuevo</h1>
+          <h1 className="title">
+            TEMAS DADOS
+          </h1>
         </header>
         <Routes>
           <Route
@@ -122,6 +141,7 @@ function App() {
             unsplash={unsplash}
             pics={pics}
             setPics={setPics}
+            seconds={seconds}
           />
           <Add
             setDices={setDices}
@@ -133,6 +153,7 @@ function App() {
             getRandomWord={getRandomWord}
             getRandomPic={getRandomPic}
           />
+          <Timer seconds={seconds} setSeconds={setSeconds}></Timer>
         </section>
       </div>
     </Router>

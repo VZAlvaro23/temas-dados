@@ -59,16 +59,19 @@ body {
   align-items: center;
 }
 
-/* header {
+header {
   display: flex;
-  justify-content: center;
-} */
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 25vh;
+}
 
 .title {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-weight: 100;
-  font-size: 3em;
-  text-shadow: 0px 0px 36px #00F0FF;
+  font-size: 5vw;
+  text-shadow: 0px 0px 36px #00f0ff;
+  /* align-self: flex-start; */
   /* position: absolute; */
   /* top: 1vh;
   width: 20vw; */
@@ -80,12 +83,15 @@ body {
 .dices-container {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  height: 50vh;
 }
 
 .words-container {
   min-width: 60vw;
   max-width: 90vw;
+  min-height: 50vh;
+
   /* font-size: 100%; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vw, auto));
@@ -97,15 +103,19 @@ body {
 .pics-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  min-height: 50vh;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 25vh;
   position: relative;
 }
-  a {
+a {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -114,17 +124,21 @@ body {
 
 @media screen and (max-width: 750px) {
   .App {
-    justify-content: end;
+    justify-content: space-between;
   }
   .dices-container {
     /* margin-top: 7em; */
+    height: 80vh;
     flex-direction: column-reverse;
     /* align-items: center; */
   }
   .pics-container {
     flex-direction: column-reverse;
+    height: 80vh;
   }
   .words-container {
+    height: 80vh;
+
     width: auto;
     min-width: auto;
     max-width: auto;
@@ -134,9 +148,13 @@ body {
   }
   .buttons {
     padding: 2vh 0 2vh 0;
+    min-height: 10vh;
   }
 
-
+  header {
+    min-height: 10vh;
+    height: 10vh;
+  }
 
   body {
     align-items: end;
@@ -148,9 +166,9 @@ body {
       #00ffc2 112.28%
     );
   }
-    .title {
+  /* .title {
     display: none;
-  }
+  } */
 }
 
 @media (max-height: 650px) {

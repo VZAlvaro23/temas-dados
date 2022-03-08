@@ -15,8 +15,6 @@ import Throw from "./components/buttons/throw/Throw";
 import Add from "./components/buttons/add/Add";
 import Timer from "./components/buttons/timer/Timer";
 
-// import titleImage from "./assets/title-dice.png";
-
 function App() {
   const [dices, setDices] = useState([]);
   const [cont, setCont] = useState(1);
@@ -90,9 +88,7 @@ function App() {
         </div>
         <Menu />
         <header>
-          <h1 className="title">
-            TEMAS DADOS
-          </h1>
+          <h1 className="title">TEMAS DADOS</h1>
         </header>
         <Routes>
           <Route

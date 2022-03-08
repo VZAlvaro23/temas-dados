@@ -13,13 +13,16 @@ const Menu = () => {
   };
   return (
     <>
-      <nav className="nav-menu" onClick={unFoldMenu}></nav>
+      <nav
+        className={isActive ? "nav-menu moon-active" : "nav-menu "}
+        onClick={unFoldMenu}
+      ></nav>
       <div
         className={
           isActive ? "nav-menu-links yes-size" : "nav-menu-links no-size"
         }
       >
-        <ul>
+        <ul className={isActive ? "" : "no-opacity"}>
           <li>
             <Link to="/temas-dados" onClick={unFoldMenu}>
               Iconos

@@ -4,7 +4,7 @@
 }
 .back-face {
   height: 10vw;
-  width: 10vw;
+  width: 10vw;;
   margin: 1vw;
   display: flex;
   justify-content: center;
@@ -80,7 +80,12 @@
     height: 15vh;
     width: 15vh;
     box-shadow: 0px 0px 45px rgba(255, 255, 255, 0.5);
+    animation: none;
     /* margin: 0; */
+  }
+  .shadow {
+    display: none;
+    /* animation: none; */
   }
 }
 

@@ -45,8 +45,8 @@ body {
   font-family: var(--font-family);
   color: var(--main-font-color);
   background: var(--bg-color);
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .App {
@@ -59,11 +59,10 @@ body {
   align-items: center;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: center;
-  
-}
+} */
 
 .title {
   font-family: 'Shadows Into Light', cursive;
@@ -81,15 +80,16 @@ header {
 .dices-container {
   display: flex;
   justify-content: center;
+  
 }
 
 .words-container {
   min-width: 60vw;
   max-width: 90vw;
-  font-size: 100%;
+  /* font-size: 100%; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vw, auto));
-  grid-row-gap: 3em;
+  grid-row-gap: 4vh;
   /* overflow-wrap: break-word; */
   hyphens: auto;
 }
@@ -110,14 +110,10 @@ header {
   .App {
     justify-content: end;
   }
-  .title {
-    top: 0;
-    width: 20vh;
-  }
   .dices-container {
-    margin-top: 7em;
+    /* margin-top: 7em; */
     flex-direction: column-reverse;
-    align-items: center;
+    /* align-items: center; */
   }
   .words-container {
     width: auto;

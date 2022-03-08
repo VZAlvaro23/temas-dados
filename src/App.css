@@ -105,6 +105,12 @@ body {
   align-items: center;
   position: relative;
 }
+  a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
 
 @media screen and (max-width: 750px) {
   .App {
@@ -114,6 +120,9 @@ body {
     /* margin-top: 7em; */
     flex-direction: column-reverse;
     /* align-items: center; */
+  }
+  .pics-container {
+    flex-direction: column-reverse;
   }
   .words-container {
     width: auto;
@@ -127,6 +136,8 @@ body {
     padding: 2vh 0 2vh 0;
   }
 
+
+
   body {
     align-items: end;
     background: linear-gradient(
@@ -136,6 +147,9 @@ body {
       #0778df 64.73%,
       #00ffc2 112.28%
     );
+  }
+    .title {
+    display: none;
   }
 }
 

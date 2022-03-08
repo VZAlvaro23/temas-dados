@@ -1,9 +1,19 @@
 .pic-container {
-
 }
 
 .pic-container img {
-  height: 20vw;
-  width: 20vw;
+    margin: 1vw;
+  height: 10vw;
+  width: 10vw;
   object-fit: cover;
+   border-radius: 6px;
+
+}
+
+@media (max-width: 750px) {
+  .pic-container img {
+    height: 15vh;
+    width: 15vh;
+  }
+
 }

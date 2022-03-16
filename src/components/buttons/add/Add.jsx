@@ -38,11 +38,9 @@ const Add = ({
   const plus = <FontAwesomeIcon icon={faPlus} />;
 
   return (
-    <article>
-      <button className="btn-add" onClick={addDice}>
-        {plus}
-      </button>
-    </article>
+    <button className="btn-add" onClick={addDice}>
+      {plus}
+    </button>
   );
 };
 

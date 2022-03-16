@@ -1,14 +1,25 @@
 .pic-container {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .pic-container img {
   margin: 1vw;
-  height: 10vw;
-  width: 10vw;
+  height: 15vw;
+  width: 15vw;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 10px 56px 35px #004756;
+}
+
+.pic-container span {
+  display: inline-flex;
+  color: lightgrey;
+  margin-left: 1vw;
+  font-size: 0.7vw;
+}
+.pic-container a {
+  text-decoration: underline;
 }
 
 @media (max-width: 750px) {

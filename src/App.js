@@ -32,6 +32,7 @@ function App() {
       },
     ]);
   };
+
   const getRandomWord = () => {
     fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
       .then((response) => {
@@ -86,36 +87,38 @@ function App() {
           <div className="star5"></div>
           <div className="star5"></div>
         </div>
-        <Menu />
+          <Menu />
         <header>
           <h1 className="title">TEMAS DADOS</h1>
         </header>
-        <Routes>
-          <Route
-            path="/temas-dados"
-            element={
-              <main className="dices-container">
-                <Dados dices={dices} />
-              </main>
-            }
-          ></Route>
-          <Route
-            path="/words"
-            element={
-              <main className="words-container">
-                <Words words={words}></Words>
-              </main>
-            }
-          ></Route>
-          <Route
-            path="/pics"
-            element={
-              <main className="pics-container">
-                <Pics pics={pics}></Pics>
-              </main>
-            }
-          ></Route>
-        </Routes>
+        <main>
+          <Routes>
+            <Route
+              path="/temas-dados"
+              element={
+                <section className="dices-container">
+                  <Dados dices={dices} />
+                </section>
+              }
+            ></Route>
+            <Route
+              path="/words"
+              element={
+                <section className="words-container">
+                  <Words words={words}></Words>
+                </section>
+              }
+            ></Route>
+            <Route
+              path="/pics"
+              element={
+                <section className="pics-container">
+                  <Pics pics={pics}></Pics>
+                </section>
+              }
+            ></Route>
+          </Routes>
+        </main>
         <section className="buttons">
           <Delete
             setDices={setDices}

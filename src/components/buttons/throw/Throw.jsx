@@ -63,13 +63,12 @@ const Throw = ({
       console.log(interval);
       clearInterval(interval.current);
     } else {
-      
       if (seconds !== 0) {
         setClicked(true);
         interval.current = setInterval(() => {
           throwDices();
         }, seconds * 1000);
-      } else throwDices()
+      } else throwDices();
     }
   };
 
@@ -88,16 +87,14 @@ const Throw = ({
   const diceFive = <FontAwesomeIcon icon={faDiceFive} />;
 
   return (
-    <article>
-      <button
-        onClick={() => {
-          throwTimer();
-        }}
-        className={clicked ? "btn spinner" : "btn"}
-      >
-        {diceFive}
-      </button>
-    </article>
+    <button
+      onClick={() => {
+        throwTimer();
+      }}
+      className={clicked ? "btn spinner" : "btn"}
+    >
+      {diceFive}
+    </button>
   );
 };
 

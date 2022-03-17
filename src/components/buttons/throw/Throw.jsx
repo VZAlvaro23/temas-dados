@@ -43,16 +43,16 @@ const Throw = ({
         const results = data.map(({ body }) => body.Word);
         setWords(results);
       });
-    // let picsNumber = pics.length;
-    // unsplash.photos.getRandom({ count: picsNumber }).then((result) => {
-    //   if (result.type === "success") {
-    //     const results = result.response.map(({ urls, user }) => ({
-    //       imgUrl: urls.raw,
-    //       alt: user.username,
-    //     }));
-    //     setPics(results);
-    //   }
-    // });
+    let picsNumber = pics.length;
+    unsplash.photos.getRandom({ count: picsNumber }).then((result) => {
+      if (result.type === "success") {
+        const results = result.response.map(({ urls, user }) => ({
+          imgUrl: urls.raw,
+          alt: user.username,
+        }));
+        setPics(results);
+      }
+    });
   };
 
   const [clicked, setClicked] = useState(false);

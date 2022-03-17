@@ -7,6 +7,7 @@
   pointer-events:none;
 }
 
+
 .star1 {
   position: absolute;
   width: 6px;
@@ -113,6 +114,11 @@
   top: 50vh;
 }
 
+.star5:nth-child(11) {
+  right: 35vw;
+  bottom: 20vh;
+}
+
 @keyframes starLight {
   0%,
   20%,
@@ -128,5 +134,11 @@
   70%,
   90% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .star2 {
+    display: none;
   }
 }

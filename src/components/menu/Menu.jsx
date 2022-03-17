@@ -6,8 +6,7 @@ import "./menu.css";
 // import menu from "../../assets/menu.png";
 import close from "../../assets/close.png";
 
-const Menu = () => {
-  const [isActive, setIsActive] = useState(false);
+const Menu = ({ isActive, setIsActive }) => {
   const unFoldMenu = () => {
     setIsActive(!isActive);
   };

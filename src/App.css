@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Just+Another+Hand&family=swap");
 
 :root {
   --bg-color: radial-gradient(
@@ -65,11 +65,15 @@ header {
   align-items: center;
   height: 25vh;
 }
-
+.logo {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+}
 .title {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Just Another Hand', cursive;
   font-weight: 100;
-  font-size: 5vw;
+  font-size: 4vw;
   text-shadow: 0px 0px 36px #00f0ff;
   /* align-self: flex-start; */
   /* position: absolute; */
@@ -153,6 +157,10 @@ a {
   .buttons button {
     margin-left: 2vh;
     margin-right: 2vh;
+  }
+  .logo {
+    top: 2vh;
+    right:5vw;
   }
 
   header {

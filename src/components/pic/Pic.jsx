@@ -6,7 +6,6 @@ const Pic = ({ imgUrl, alt }) => {
       <img
         src={imgUrl}
         alt={"Photo by: " + alt + " on unsplash.com"}
-        title={"Photo by: " + alt + " on unsplash.com"}
       />
       <span>
         Photo by:&nbsp;

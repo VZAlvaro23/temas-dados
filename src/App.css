@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Just+Another+Hand&family=swap");
 
 :root {
-  --bg-color: radial-gradient(
-    101.37% 101.37% at 50% 100%,
-    #7bffe7 0%,
-    #10385e 64.78%,
-    #000000 100%
-  );
+  --bg-color: radial-gradient(119.87% 119.87% at 50% 118.51%, #058C74 0%, #10385E 30.13%, #52004F 67.13%, #000000 100%);;
   --main-font-color: #fff;
   --font-family: "Raleway", sans-serif;
   /* Dice */

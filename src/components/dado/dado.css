@@ -26,7 +26,7 @@
   height: 10vw;
   width: 10vw;
   position: absolute;
-  border: 10px solid #004756;
+  border: 10px solid #000000;
   border-radius: 6px;
   top: 30px;
   left: 10px;
@@ -41,7 +41,7 @@
 .shadow div {
   width: 50px;
   height: 50px;
-  background-color: #004756;
+  background-color: #000000;
   /* filter: blur(10px); */
 }
 
@@ -79,7 +79,7 @@
   .back-face {
     height: 15vh;
     width: 15vh;
-    box-shadow: 0px 0px 45px rgba(255, 255, 255, 0.5);
+    box-shadow: none;
     animation: none;
     /* margin: 0; */
   }

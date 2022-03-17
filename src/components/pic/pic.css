@@ -9,7 +9,7 @@
   width: 15vw;
   object-fit: cover;
   border-radius: 6px;
-  box-shadow: 10px 56px 35px #004756;
+  box-shadow: 10px 56px 35px rgba(0, 0, 0, 0.41);
 }
 
 .pic-container span {

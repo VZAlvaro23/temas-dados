@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Just+Another+Hand&family=swap");
 
 :root {
-  --bg-color: radial-gradient(119.87% 119.87% at 50% 118.51%, #058C74 0%, #10385E 30.13%, #52004F 67.13%, #000000 100%);;
+  --bg-color: radial-gradient(
+    119.87% 119.87% at 50% 118.51%,
+    #058c74 0%,
+    #10385e 30.13%,
+    #52004f 67.13%,
+    #000000 100%
+  );
   --main-font-color: #fff;
   --font-family: "Raleway", sans-serif;
   /* Dice */
@@ -66,10 +72,10 @@ header {
   right: 5vw;
 }
 .title {
-  font-family: 'Just Another Hand', cursive;
+  font-family: "Just Another Hand", cursive;
   font-weight: 100;
   font-size: 4vw;
-  text-shadow: 0px 0px 36px #00f0ff;
+  text-shadow: 0px 0px 36px #ffffff;
   /* align-self: flex-start; */
   /* position: absolute; */
   /* top: 1vh;
@@ -143,6 +149,8 @@ a {
     max-width: auto;
     display: flex;
     flex-direction: column-reverse;
+     justify-content: center;
+  align-items: center;
     row-gap: 0;
   }
   .buttons {
@@ -155,7 +163,7 @@ a {
   }
   .logo {
     top: 2vh;
-    right:5vw;
+    right: 5vw;
   }
 
   header {

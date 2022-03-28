@@ -21,7 +21,7 @@ function App() {
   const [words, setWords] = useState([]);
   const [pics, setPics] = useState([]);
   const [seconds, setSeconds] = useState(0);
-  const [diceNumber, setDiceNumber] = useState(Math.floor(Math.random() * 36));
+  const [diceNumber, setDiceNumber] = useState(Math.floor(Math.random() * 30));
   const [dicesNumbers, setDicesNumbers] = useState([]);
 
   const getRandomDice = () => {
@@ -183,7 +183,7 @@ function App() {
         <div className="shooting-stars"></div>
         <Menu isActive={isActive} setIsActive={setIsActive} />
         <header>
-          <h1 className="title">TEMAS DADOS</h1>
+          <h1 className="title">"TEMAS DADOS"</h1>
         </header>
         <main>
           <Routes>

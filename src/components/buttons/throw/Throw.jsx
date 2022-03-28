@@ -20,9 +20,10 @@ const Throw = ({
     
     dices.map((dice, index) => {
       do {
-        diceNumber = Math.floor(Math.random() * 36);
+        diceNumber = Math.floor(Math.random() * 30);
       } while (dicesNumbers.includes(diceNumber));
       dicesNumbers.push(diceNumber);   
+      console.log(diceNumber)
       dice.imgUrl = require("../../../assets/dices" +
         // index +
         "/" +

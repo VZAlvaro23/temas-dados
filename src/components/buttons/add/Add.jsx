@@ -19,9 +19,8 @@ const Add = ({
     if (dices.length <= 4) {
       setCont(cont + 1);
       do {
-        diceNumber = Math.floor(Math.random() * 36);
+        diceNumber = Math.floor(Math.random() * 30);
       } while (dicesNumbers.includes(diceNumber));
-      console.log(dicesNumbers)
       setDicesNumbers([...dicesNumbers, diceNumber]);
       setDices([
         ...dices,

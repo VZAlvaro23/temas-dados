@@ -3,12 +3,9 @@ import "./pic.css";
 const Pic = ({ imgUrl, alt }) => {
   return (
     <article className="pic-container">
-      <img
-        src={imgUrl}
-        alt={"Photo by: " + alt + " on unsplash.com"}
-      />
+      <img src={imgUrl} alt={"Photo by: " + alt + " on unsplash.com"} />
       <span>
-        Photo by:&nbsp;
+        <p>Photo by:&nbsp;</p>
         <a
           href={
             "https://unsplash.com/@" +

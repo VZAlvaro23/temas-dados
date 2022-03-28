@@ -1,0 +1,76 @@
+$stars: 100;
+$starFieldWidth: 2560;
+$starFieldHeight: 2560;
+$numShootingStars: 10;
+
+.stars {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+@mixin shooting-star-template($numStars, $starSize, $speed) {
+  z-index: 100;
+  width: $starSize;
+  height: $starSize + 80px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  animation: animShootingStar $speed linear infinite;
+}
+.shooting-stars {
+  @include shooting-star-template($numShootingStars, 5px, 10s);
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px) rotate(-45deg);
+    opacity: 1;
+    height: 800px;
+  }
+}
+
+@for $i from 0 through $stars {
+  .star:nth-child(#{$i}) {
+    $d: random(2);
+    width: $d + px;
+    height: $d + px;
+    z-index: 1;
+    background: white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    opacity: 1;
+
+    margin-left: random(1500) + px;
+    margin-top: random(875) + px;
+
+    animation: twinkle-#{$i} 1s linear infinite;
+    animation-delay: $i * 0.01s;
+  }
+
+  @keyframes twinkle-#{$i} {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0.3;
+    }
+  }
+}

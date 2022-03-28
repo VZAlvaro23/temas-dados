@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 const Delete = ({
+  setDicesNumbers,
+  dicesNumbers,
   dices,
   setDices,
   cont,
@@ -24,6 +26,9 @@ const Delete = ({
       setDices([...dices]);
 
       setPics([...pics]);
+      dicesNumbers.pop();
+      setDicesNumbers([...dicesNumbers]);
+      console.log(dicesNumbers);
     }
     if (words.length > 1) {
       words.pop();

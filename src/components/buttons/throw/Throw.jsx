@@ -15,11 +15,18 @@ const Throw = ({
   seconds,
 }) => {
   const throwDices = async () => {
+    let dicesNumbers = [];
+    let diceNumber;
+    
     dices.map((dice, index) => {
-      dice.imgUrl = require("../../../assets/dice" +
-        index +
+      do {
+        diceNumber = Math.floor(Math.random() * 36);
+      } while (dicesNumbers.includes(diceNumber));
+      dicesNumbers.push(diceNumber);   
+      dice.imgUrl = require("../../../assets/dices" +
+        // index +
         "/" +
-        Math.floor(Math.random() * 6) +
+        diceNumber +
         ".png");
     });
     setDices([...dices]);

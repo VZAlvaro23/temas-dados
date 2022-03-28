@@ -1,34 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Just+Another+Hand&family=swap");
 
 :root {
-  --bg-color: radial-gradient(
-    119.87% 119.87% at 50% 118.51%,
-    #058c74 0%,
-    #10385e 30.13%,
-    #52004f 67.13%,
-    #000000 100%
+  --bg-color: linear-gradient(
+    353.79deg,
+    #000000 -111.81%,
+    #655581 -46.68%,
+    #2f0e6a 23.23%,
+    #01000e 88.42%
   );
   --main-font-color: #fff;
   --font-family: "Raleway", sans-serif;
-  /* Dice */
-  --dice-background: linear-gradient(174.56deg, #d6ffe1 2.1%, #6663dd 94.23%);
-  --dice-front: linear-gradient(
-    147.9deg,
-    #b4ffdb 1.74%,
-    #ffddfc 46.71%,
-    #6bdcff 92.62%
-  );
-  --dice-icon-color: #6248ff;
-  --dice-box-shadow: 10px 10px 45px rgba(0, 209, 255, 0.5);
-  /* Buttons */
-  --btn-delete-bg: linear-gradient(171.14deg, #ff416c -7.81%, #ff4b2b 108.5%);
-  --btn-add-bg: linear-gradient(139.94deg, #aaffa9 7.27%, #11ffbd 100%);
-  --btn-throw-bg: linear-gradient(132.98deg, #0d00a7 -35.88%, #e71bc6 210.13%);
-  --btn-delete-color: #c10000;
-  --btn-add-color: #339648;
-  /* Nav menu */
-  --menu-bg: linear-gradient(147.9deg, #5e1c97 1.74%, #300092 92.62%);
-  --link-active: #480030;
 }
 
 * {
@@ -40,23 +21,33 @@
 }
 
 body {
-  min-height: 100vh;
-  max-height: 100vh;
+  /* min-height: 100vh;
+  max-height: 100vh; */
   font-size: 100%;
   font-family: var(--font-family);
   color: var(--main-font-color);
   background: var(--bg-color);
+  overflow: hidden;
   /* display: flex;
   justify-content: center; */
 }
 
+a {
+  /* display: inline; */
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
 .App {
-  min-height: 100vh;
+  /* min-height: 100vh;
   max-height: 100vh;
-  width: 100vw;
+  width: 100vw; */
   display: flex;
+  overflow: hidden;
+
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -66,15 +57,17 @@ header {
   align-items: center;
   height: 25vh;
 }
+
 .logo {
   position: absolute;
   bottom: 5vh;
   right: 5vw;
 }
+
 .title {
   font-family: "Just Another Hand", cursive;
-  font-weight: 100;
-  font-size: 4vw;
+  /* font-weight: 100; */
+  font-size: 6vw;
   text-shadow: 0px 0px 36px #ffffff;
   /* align-self: flex-start; */
   /* position: absolute; */
@@ -113,18 +106,19 @@ header {
   min-height: 50vh;
 }
 
+.pics-container > :nth-child(2), 
+.pics-container > :nth-child(3), 
+.pics-container > :nth-child(4), 
+.pics-container > :nth-child(5) {
+  margin-left: 1em;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 25vh;
   position: relative;
-}
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
 }
 
 @media screen and (max-width: 750px) {
@@ -149,12 +143,12 @@ a {
     max-width: auto;
     display: flex;
     flex-direction: column-reverse;
-     justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
     row-gap: 0;
   }
   .buttons {
-    padding: 2vh 0 2vh 0;
+    /* padding: 2vh 0 2vh 0; */
     min-height: 10vh;
   }
   .buttons button {
@@ -173,13 +167,7 @@ a {
 
   body {
     align-items: end;
-    background: linear-gradient(
-      180deg,
-      #000000 0%,
-      #77046b 34.5%,
-      #0778df 64.73%,
-      #00ffc2 112.28%
-    );
+    background: linear-gradient(167.95deg, #0B001A 3.65%, #070051 48.42%, #000202 100%);
   }
   /* .title {
     display: none;

@@ -1,11 +1,12 @@
 import "./add.css";
 
-import addImg from "../../../assets/buttons/add.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Add = ({
+  setDicesNumbers,
+  dicesNumbers,
+  diceNumber,
   dices,
   setDices,
   cont,
@@ -17,13 +18,18 @@ const Add = ({
   const addDice = () => {
     if (dices.length <= 4) {
       setCont(cont + 1);
+      do {
+        diceNumber = Math.floor(Math.random() * 36);
+      } while (dicesNumbers.includes(diceNumber));
+      console.log(dicesNumbers)
+      setDicesNumbers([...dicesNumbers, diceNumber]);
       setDices([
         ...dices,
         {
-          imgUrl: require("../../../assets/dice" +
-            cont +
+          imgUrl: require("../../../assets/dices" +
+            // cont +
             "/" +
-            Math.floor(Math.random() * 6) +
+            diceNumber +
             ".png"),
           alt: "icon",
         },

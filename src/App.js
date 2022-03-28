@@ -21,29 +21,31 @@ function App() {
   const [words, setWords] = useState([]);
   const [pics, setPics] = useState([]);
   const [seconds, setSeconds] = useState(0);
+  const [diceNumber, setDiceNumber] = useState(Math.floor(Math.random() * 36));
+  const [dicesNumbers, setDicesNumbers] = useState([]);
 
   const getRandomDice = () => {
+    setDicesNumbers([...dicesNumbers, diceNumber]);
     setDices([
       {
-        imgUrl: require("./assets/dice0/" +
-          Math.floor(Math.random() * 6) +
-          ".png"),
+        imgUrl: require("./assets/dices/" + diceNumber + ".png"),
         alt: "icon",
       },
     ]);
   };
 
   const getRandomWord = () => {
-    fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw Response;
-      })
-      .then((data) => {
-        setWords([...words, data.body.Word]);
-      });
+    // fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
+    //   .then((response) => {
+    //     if (response.ok) {
+    //       return response.json();
+    //     }
+    //     throw Response;
+    //   })
+    //   .then((data) => {
+    //     setWords([...words, data.body.Word]);
+    //   });
+    setWords([...words, "Patatas"]);
   };
 
   const unsplash = createApi({
@@ -71,23 +73,115 @@ function App() {
     getRandomWord();
     getRandomPic();
   }, []);
+
   const [isActive, setIsActive] = useState(false);
+  
   return (
     <Router>
       <div className="App">
-        <div className="background-stars">
-          <div className="star1"></div>
-          <div className="star1"></div>
-          <div className="star2"></div>
-          <div className="star2"></div>
-          <div className="star3"></div>
-          <div className="star3"></div>
-          <div className="star4"></div>
-          <div className="star4"></div>
-          <div className="star5"></div>
-          <div className="star5"></div>
-          <div className="star5"></div>
+        <div className="stars">
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
         </div>
+        <div className="shooting-stars"></div>
         <Menu isActive={isActive} setIsActive={setIsActive} />
         <header>
           <h1 className="title">TEMAS DADOS</h1>
@@ -122,6 +216,8 @@ function App() {
         </main>
         <section className="buttons">
           <Delete
+            dicesNumbers={dicesNumbers}
+            setDicesNumbers={setDicesNumbers}
             setDices={setDices}
             setWords={setWords}
             dices={dices}
@@ -146,6 +242,9 @@ function App() {
           <Add
             setDices={setDices}
             setWords={setWords}
+            diceNumber={diceNumber}
+            dicesNumbers={dicesNumbers}
+            setDicesNumbers={setDicesNumbers}
             words={words}
             dices={dices}
             cont={cont}
@@ -156,7 +255,7 @@ function App() {
           <Timer seconds={seconds} setSeconds={setSeconds}></Timer>
         </section>
         <svg
-        className = "logo"
+          className="logo"
           width="50"
           height="40"
           viewBox="0 0 70 60"

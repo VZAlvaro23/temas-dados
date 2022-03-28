@@ -11,19 +11,25 @@
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 25vh;
+  right: -5px;
   background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
-  animation: animShootingStar 10s linear infinite;
+  animation: animShootingStar 20s linear infinite;
+  animation-delay: 4s;
 }
 
 @keyframes animShootingStar {
-  from {
+  0% {
     transform: translateY(0px) translateX(0px) rotate(-45deg);
     opacity: 1;
     height: 5px;
   }
-  to {
+  20% {
+    transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
+    opacity: 1;
+    height: 800px;
+  }
+  100% {
     transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
     opacity: 1;
     height: 800px;

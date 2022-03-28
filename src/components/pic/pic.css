@@ -11,6 +11,10 @@
   /* align-items: center;
     justify-content: center; */
 }
+.pic-container:hover {
+  transition: transform 200ms ease-in;
+    transform: scale(1.5);
+}
 
 .pic-container img {
   /* margin: 1vw 1vw 0 1vw; */

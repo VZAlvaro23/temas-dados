@@ -35,17 +35,16 @@ function App() {
   };
 
   const getRandomWord = () => {
-    // fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
-    //   .then((response) => {
-    //     if (response.ok) {
-    //       return response.json();
-    //     }
-    //     throw Response;
-    //   })
-    //   .then((data) => {
-    //     setWords([...words, data.body.Word]);
-    //   });
-    setWords([...words, "Patatas"]);
+    fetch("https://palabras-aleatorias-public-api.herokuapp.com/random")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw Response;
+      })
+      .then((data) => {
+        setWords([...words, data.body.Word]);
+      });
   };
 
   const unsplash = createApi({

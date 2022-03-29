@@ -6,7 +6,7 @@
   /* width: 16vw; */
   /* max-width: 15vw; */
   padding: 1vw;
-  box-shadow: 0px 0px 100px rgb(0 0 0 / 50%);
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
   /* transition: box-shadow 0.5s ; */
   /* margin-right: 1em; */
   /* align-items: center;
@@ -51,6 +51,9 @@
     box-shadow: none;
     padding: 0;
     background: none;
+  }
+  .pic-container:hover {
+    transform: scale(2);
   }
   .pic-container img {
     height: 15vh;

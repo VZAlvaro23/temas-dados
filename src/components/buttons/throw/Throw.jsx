@@ -20,7 +20,7 @@ const Throw = ({
     
     dices.map((dice, index) => {
       do {
-        diceNumber = Math.floor(Math.random() * 30);
+        diceNumber = Math.floor(Math.random() * 108);
       } while (dicesNumbers.includes(diceNumber));
       dicesNumbers.push(diceNumber);   
       console.log(diceNumber)

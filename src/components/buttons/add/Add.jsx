@@ -19,7 +19,7 @@ const Add = ({
     if (dices.length <= 4) {
       setCont(cont + 1);
       do {
-        diceNumber = Math.floor(Math.random() * 30);
+        diceNumber = Math.floor(Math.random() * 108);
       } while (dicesNumbers.includes(diceNumber));
       setDicesNumbers([...dicesNumbers, diceNumber]);
       setDices([

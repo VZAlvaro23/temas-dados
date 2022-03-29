@@ -21,7 +21,7 @@ function App() {
   const [words, setWords] = useState([]);
   const [pics, setPics] = useState([]);
   const [seconds, setSeconds] = useState(0);
-  const [diceNumber, setDiceNumber] = useState(Math.floor(Math.random() * 30));
+  const [diceNumber, setDiceNumber] = useState(Math.floor(Math.random() * 108));
   const [dicesNumbers, setDicesNumbers] = useState([]);
 
   const getRandomDice = () => {

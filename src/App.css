@@ -68,7 +68,7 @@ header {
   font-family: "Just Another Hand", cursive;
   /* font-weight: 100; */
   font-size: 6vw;
-  text-shadow: 0px 0px 36px #ffffff;
+  text-shadow: 0px 0px 10px #ffffff;
   /* align-self: flex-start; */
   /* position: absolute; */
   /* top: 1vh;
@@ -154,6 +154,9 @@ header {
   .buttons button {
     margin-left: 2vh;
     margin-right: 2vh;
+  }
+  .title {
+    text-shadow: 0px 0px 10px #ffffff;
   }
   .logo {
     top: 2vh;

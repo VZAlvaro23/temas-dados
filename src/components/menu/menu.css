@@ -32,10 +32,9 @@
 }
 
 .nav-menu-links {
-  position: absolute;
+  position: fixed;
   /* min-height: 100vh; */
-  height:100%;
-  width: 100%;
+  min-height:100vh;
   /* border-radius: 50%; */
   top: 0;
   /* left: 20vh; */

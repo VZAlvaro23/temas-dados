@@ -43,7 +43,7 @@ a {
   /* min-height: 100vh;
   max-height: 100vh; */
   display: flex;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
   flex-direction: column;
   /* justify-content: space-evenly; */

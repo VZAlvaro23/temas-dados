@@ -180,7 +180,7 @@ function App() {
           <div className="star"></div>
           <div className="star"></div>
         </div>
-        <div className="shooting-stars"></div>
+        {/* <div className="shooting-stars"></div> */}
         <Menu isActive={isActive} setIsActive={setIsActive} />
         <header>
           <h1 className="title">"TEMAS DADOS"</h1>

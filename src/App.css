@@ -44,7 +44,6 @@ a {
   /* min-height: 100vh;
   max-height: 100vh; */
   display: flex;
-  max-width: 100%;
   overflow: hidden;
   position: relative;
   flex-direction: column;

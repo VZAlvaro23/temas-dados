@@ -57,8 +57,8 @@ $starFieldHeight: 2560;
 
     opacity: 1;
 
-    margin-left: random(100) + vw;
-    margin-top: random(100) + vh;
+    margin-left: random(1500) + px;
+    margin-top: random(875) + px;
 
     animation: twinkle-#{$i} 1s linear infinite;
     animation-delay: $i * 0.01s;

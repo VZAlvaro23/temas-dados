@@ -125,6 +125,7 @@
 
 .no-opacity {
   opacity: 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 750px) {

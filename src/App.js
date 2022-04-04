@@ -183,7 +183,7 @@ function App() {
         <div className="shooting-stars"></div>
         <Menu isActive={isActive} setIsActive={setIsActive} />
         <header>
-          <h1 className="title">"TEMAsS DADOS"</h1>
+          <h1 className="title">"TEMAS DADOS"</h1>
         </header>
         <main>
           <Routes>

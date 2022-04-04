@@ -33,6 +33,7 @@
 
 .nav-menu-links {
   position: fixed;
+  display: none;
   /* min-height: 100vh; */
   max-height:100vh;
   max-width: 100vw;

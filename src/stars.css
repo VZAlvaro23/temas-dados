@@ -31,15 +31,15 @@
   }
 }
 .star:nth-child(0) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1168px;
-  margin-top: 196px;
+  margin-left: 85vw;
+  margin-top: 66vh;
   animation: twinkle-0 1s linear infinite;
   animation-delay: 0s;
 }
@@ -60,8 +60,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1446px;
-  margin-top: 322px;
+  margin-left: 17vw;
+  margin-top: 38vh;
   animation: twinkle-1 1s linear infinite;
   animation-delay: 0.01s;
 }
@@ -82,8 +82,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1468px;
-  margin-top: 715px;
+  margin-left: 84vw;
+  margin-top: 11vh;
   animation: twinkle-2 1s linear infinite;
   animation-delay: 0.02s;
 }
@@ -97,15 +97,15 @@
   }
 }
 .star:nth-child(3) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 357px;
-  margin-top: 804px;
+  margin-left: 89vw;
+  margin-top: 5vh;
   animation: twinkle-3 1s linear infinite;
   animation-delay: 0.03s;
 }
@@ -126,8 +126,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1314px;
-  margin-top: 382px;
+  margin-left: 57vw;
+  margin-top: 50vh;
   animation: twinkle-4 1s linear infinite;
   animation-delay: 0.04s;
 }
@@ -141,15 +141,15 @@
   }
 }
 .star:nth-child(5) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 377px;
-  margin-top: 30px;
+  margin-left: 17vw;
+  margin-top: 60vh;
   animation: twinkle-5 1s linear infinite;
   animation-delay: 0.05s;
 }
@@ -163,15 +163,15 @@
   }
 }
 .star:nth-child(6) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1457px;
-  margin-top: 597px;
+  margin-left: 99vw;
+  margin-top: 10vh;
   animation: twinkle-6 1s linear infinite;
   animation-delay: 0.06s;
 }
@@ -185,15 +185,15 @@
   }
 }
 .star:nth-child(7) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 973px;
-  margin-top: 749px;
+  margin-left: 1vw;
+  margin-top: 21vh;
   animation: twinkle-7 1s linear infinite;
   animation-delay: 0.07s;
 }
@@ -207,15 +207,15 @@
   }
 }
 .star:nth-child(8) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 585px;
-  margin-top: 271px;
+  margin-left: 36vw;
+  margin-top: 28vh;
   animation: twinkle-8 1s linear infinite;
   animation-delay: 0.08s;
 }
@@ -236,8 +236,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 625px;
-  margin-top: 610px;
+  margin-left: 5vw;
+  margin-top: 89vh;
   animation: twinkle-9 1s linear infinite;
   animation-delay: 0.09s;
 }
@@ -258,8 +258,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1144px;
-  margin-top: 464px;
+  margin-left: 71vw;
+  margin-top: 65vh;
   animation: twinkle-10 1s linear infinite;
   animation-delay: 0.1s;
 }
@@ -273,15 +273,15 @@
   }
 }
 .star:nth-child(11) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1426px;
-  margin-top: 63px;
+  margin-left: 64vw;
+  margin-top: 85vh;
   animation: twinkle-11 1s linear infinite;
   animation-delay: 0.11s;
 }
@@ -295,15 +295,15 @@
   }
 }
 .star:nth-child(12) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1091px;
-  margin-top: 59px;
+  margin-left: 90vw;
+  margin-top: 70vh;
   animation: twinkle-12 1s linear infinite;
   animation-delay: 0.12s;
 }
@@ -324,8 +324,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 645px;
+  margin-left: 9vw;
+  margin-top: 25vh;
   animation: twinkle-13 1s linear infinite;
   animation-delay: 0.13s;
 }
@@ -339,15 +339,15 @@
   }
 }
 .star:nth-child(14) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 811px;
-  margin-top: 761px;
+  margin-left: 56vw;
+  margin-top: 34vh;
   animation: twinkle-14 1s linear infinite;
   animation-delay: 0.14s;
 }
@@ -368,8 +368,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1196px;
-  margin-top: 608px;
+  margin-left: 34vw;
+  margin-top: 77vh;
   animation: twinkle-15 1s linear infinite;
   animation-delay: 0.15s;
 }
@@ -390,8 +390,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 851px;
-  margin-top: 607px;
+  margin-left: 37vw;
+  margin-top: 71vh;
   animation: twinkle-16 1s linear infinite;
   animation-delay: 0.16s;
 }
@@ -405,15 +405,15 @@
   }
 }
 .star:nth-child(17) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 650px;
-  margin-top: 466px;
+  margin-left: 30vw;
+  margin-top: 27vh;
   animation: twinkle-17 1s linear infinite;
   animation-delay: 0.17s;
 }
@@ -427,15 +427,15 @@
   }
 }
 .star:nth-child(18) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 867px;
-  margin-top: 590px;
+  margin-left: 95vw;
+  margin-top: 20vh;
   animation: twinkle-18 1s linear infinite;
   animation-delay: 0.18s;
 }
@@ -449,15 +449,15 @@
   }
 }
 .star:nth-child(19) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 609px;
-  margin-top: 723px;
+  margin-left: 29vw;
+  margin-top: 34vh;
   animation: twinkle-19 1s linear infinite;
   animation-delay: 0.19s;
 }
@@ -478,8 +478,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1050px;
-  margin-top: 345px;
+  margin-left: 25vw;
+  margin-top: 58vh;
   animation: twinkle-20 1s linear infinite;
   animation-delay: 0.2s;
 }
@@ -500,8 +500,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 872px;
-  margin-top: 502px;
+  margin-left: 60vw;
+  margin-top: 76vh;
   animation: twinkle-21 1s linear infinite;
   animation-delay: 0.21s;
 }
@@ -515,15 +515,15 @@
   }
 }
 .star:nth-child(22) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1268px;
-  margin-top: 509px;
+  margin-left: 32vw;
+  margin-top: 8vh;
   animation: twinkle-22 1s linear infinite;
   animation-delay: 0.22s;
 }
@@ -537,15 +537,15 @@
   }
 }
 .star:nth-child(23) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 747px;
-  margin-top: 208px;
+  margin-left: 81vw;
+  margin-top: 98vh;
   animation: twinkle-23 1s linear infinite;
   animation-delay: 0.23s;
 }
@@ -566,8 +566,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1386px;
-  margin-top: 129px;
+  margin-left: 12vw;
+  margin-top: 38vh;
   animation: twinkle-24 1s linear infinite;
   animation-delay: 0.24s;
 }
@@ -588,8 +588,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1207px;
-  margin-top: 766px;
+  margin-left: 75vw;
+  margin-top: 57vh;
   animation: twinkle-25 1s linear infinite;
   animation-delay: 0.25s;
 }
@@ -603,15 +603,15 @@
   }
 }
 .star:nth-child(26) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 635px;
-  margin-top: 61px;
+  margin-left: 39vw;
+  margin-top: 18vh;
   animation: twinkle-26 1s linear infinite;
   animation-delay: 0.26s;
 }
@@ -632,8 +632,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 682px;
-  margin-top: 268px;
+  margin-left: 43vw;
+  margin-top: 100vh;
   animation: twinkle-27 1s linear infinite;
   animation-delay: 0.27s;
 }
@@ -647,15 +647,15 @@
   }
 }
 .star:nth-child(28) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 866px;
-  margin-top: 511px;
+  margin-left: 66vw;
+  margin-top: 9vh;
   animation: twinkle-28 1s linear infinite;
   animation-delay: 0.28s;
 }
@@ -669,15 +669,15 @@
   }
 }
 .star:nth-child(29) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 399px;
-  margin-top: 823px;
+  margin-left: 28vw;
+  margin-top: 8vh;
   animation: twinkle-29 1s linear infinite;
   animation-delay: 0.29s;
 }
@@ -698,8 +698,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 352px;
-  margin-top: 680px;
+  margin-left: 94vw;
+  margin-top: 8vh;
   animation: twinkle-30 1s linear infinite;
   animation-delay: 0.3s;
 }
@@ -720,8 +720,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 922px;
-  margin-top: 844px;
+  margin-left: 10vw;
+  margin-top: 99vh;
   animation: twinkle-31 1s linear infinite;
   animation-delay: 0.31s;
 }
@@ -735,15 +735,15 @@
   }
 }
 .star:nth-child(32) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1127px;
-  margin-top: 178px;
+  margin-left: 23vw;
+  margin-top: 13vh;
   animation: twinkle-32 1s linear infinite;
   animation-delay: 0.32s;
 }
@@ -764,8 +764,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 88px;
-  margin-top: 443px;
+  margin-left: 59vw;
+  margin-top: 14vh;
   animation: twinkle-33 1s linear infinite;
   animation-delay: 0.33s;
 }
@@ -786,8 +786,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 890px;
-  margin-top: 343px;
+  margin-left: 46vw;
+  margin-top: 36vh;
   animation: twinkle-34 1s linear infinite;
   animation-delay: 0.34s;
 }
@@ -801,15 +801,15 @@
   }
 }
 .star:nth-child(35) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 301px;
+  margin-left: 68vw;
+  margin-top: 55vh;
   animation: twinkle-35 1s linear infinite;
   animation-delay: 0.35s;
 }
@@ -823,15 +823,15 @@
   }
 }
 .star:nth-child(36) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 559px;
-  margin-top: 671px;
+  margin-left: 91vw;
+  margin-top: 1vh;
   animation: twinkle-36 1s linear infinite;
   animation-delay: 0.36s;
 }
@@ -845,15 +845,15 @@
   }
 }
 .star:nth-child(37) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 995px;
-  margin-top: 270px;
+  margin-left: 77vw;
+  margin-top: 23vh;
   animation: twinkle-37 1s linear infinite;
   animation-delay: 0.37s;
 }
@@ -867,15 +867,15 @@
   }
 }
 .star:nth-child(38) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1050px;
-  margin-top: 681px;
+  margin-left: 43vw;
+  margin-top: 93vh;
   animation: twinkle-38 1s linear infinite;
   animation-delay: 0.38s;
 }
@@ -889,15 +889,15 @@
   }
 }
 .star:nth-child(39) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 919px;
-  margin-top: 461px;
+  margin-left: 6vw;
+  margin-top: 40vh;
   animation: twinkle-39 1s linear infinite;
   animation-delay: 0.39s;
 }
@@ -918,8 +918,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1130px;
-  margin-top: 194px;
+  margin-left: 76vw;
+  margin-top: 16vh;
   animation: twinkle-40 1s linear infinite;
   animation-delay: 0.4s;
 }
@@ -933,15 +933,15 @@
   }
 }
 .star:nth-child(41) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 294px;
-  margin-top: 53px;
+  margin-left: 23vw;
+  margin-top: 58vh;
   animation: twinkle-41 1s linear infinite;
   animation-delay: 0.41s;
 }
@@ -962,8 +962,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 792px;
-  margin-top: 429px;
+  margin-left: 9vw;
+  margin-top: 36vh;
   animation: twinkle-42 1s linear infinite;
   animation-delay: 0.42s;
 }
@@ -977,15 +977,15 @@
   }
 }
 .star:nth-child(43) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 705px;
-  margin-top: 754px;
+  margin-left: 21vw;
+  margin-top: 17vh;
   animation: twinkle-43 1s linear infinite;
   animation-delay: 0.43s;
 }
@@ -999,15 +999,15 @@
   }
 }
 .star:nth-child(44) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 463px;
+  margin-left: 58vw;
+  margin-top: 94vh;
   animation: twinkle-44 1s linear infinite;
   animation-delay: 0.44s;
 }
@@ -1021,15 +1021,15 @@
   }
 }
 .star:nth-child(45) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 697px;
-  margin-top: 84px;
+  margin-left: 67vw;
+  margin-top: 12vh;
   animation: twinkle-45 1s linear infinite;
   animation-delay: 0.45s;
 }
@@ -1043,15 +1043,15 @@
   }
 }
 .star:nth-child(46) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 955px;
-  margin-top: 807px;
+  margin-left: 43vw;
+  margin-top: 44vh;
   animation: twinkle-46 1s linear infinite;
   animation-delay: 0.46s;
 }
@@ -1072,8 +1072,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 483px;
-  margin-top: 274px;
+  margin-left: 56vw;
+  margin-top: 85vh;
   animation: twinkle-47 1s linear infinite;
   animation-delay: 0.47s;
 }
@@ -1087,15 +1087,15 @@
   }
 }
 .star:nth-child(48) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 327px;
-  margin-top: 406px;
+  margin-left: 42vw;
+  margin-top: 43vh;
   animation: twinkle-48 1s linear infinite;
   animation-delay: 0.48s;
 }
@@ -1116,8 +1116,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1040px;
-  margin-top: 831px;
+  margin-left: 72vw;
+  margin-top: 67vh;
   animation: twinkle-49 1s linear infinite;
   animation-delay: 0.49s;
 }
@@ -1138,8 +1138,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 698px;
-  margin-top: 664px;
+  margin-left: 64vw;
+  margin-top: 92vh;
   animation: twinkle-50 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -1153,15 +1153,15 @@
   }
 }
 .star:nth-child(51) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1420px;
-  margin-top: 338px;
+  margin-left: 45vw;
+  margin-top: 31vh;
   animation: twinkle-51 1s linear infinite;
   animation-delay: 0.51s;
 }
@@ -1175,15 +1175,15 @@
   }
 }
 .star:nth-child(52) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 659px;
-  margin-top: 107px;
+  margin-left: 94vw;
+  margin-top: 69vh;
   animation: twinkle-52 1s linear infinite;
   animation-delay: 0.52s;
 }
@@ -1204,8 +1204,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 719px;
-  margin-top: 430px;
+  margin-left: 37vw;
+  margin-top: 78vh;
   animation: twinkle-53 1s linear infinite;
   animation-delay: 0.53s;
 }
@@ -1226,8 +1226,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 973px;
-  margin-top: 179px;
+  margin-left: 72vw;
+  margin-top: 60vh;
   animation: twinkle-54 1s linear infinite;
   animation-delay: 0.54s;
 }
@@ -1248,8 +1248,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 499px;
-  margin-top: 260px;
+  margin-left: 79vw;
+  margin-top: 73vh;
   animation: twinkle-55 1s linear infinite;
   animation-delay: 0.55s;
 }
@@ -1263,15 +1263,15 @@
   }
 }
 .star:nth-child(56) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1487px;
-  margin-top: 867px;
+  margin-left: 5vw;
+  margin-top: 81vh;
   animation: twinkle-56 1s linear infinite;
   animation-delay: 0.56s;
 }
@@ -1285,15 +1285,15 @@
   }
 }
 .star:nth-child(57) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 856px;
-  margin-top: 798px;
+  margin-left: 54vw;
+  margin-top: 67vh;
   animation: twinkle-57 1s linear infinite;
   animation-delay: 0.57s;
 }
@@ -1314,8 +1314,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 820px;
-  margin-top: 587px;
+  margin-left: 98vw;
+  margin-top: 82vh;
   animation: twinkle-58 1s linear infinite;
   animation-delay: 0.58s;
 }
@@ -1329,15 +1329,15 @@
   }
 }
 .star:nth-child(59) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 328px;
-  margin-top: 557px;
+  margin-left: 97vw;
+  margin-top: 93vh;
   animation: twinkle-59 1s linear infinite;
   animation-delay: 0.59s;
 }
@@ -1358,8 +1358,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 624px;
-  margin-top: 689px;
+  margin-left: 32vw;
+  margin-top: 29vh;
   animation: twinkle-60 1s linear infinite;
   animation-delay: 0.6s;
 }
@@ -1373,15 +1373,15 @@
   }
 }
 .star:nth-child(61) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 933px;
-  margin-top: 834px;
+  margin-left: 52vw;
+  margin-top: 21vh;
   animation: twinkle-61 1s linear infinite;
   animation-delay: 0.61s;
 }
@@ -1395,15 +1395,15 @@
   }
 }
 .star:nth-child(62) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1390px;
-  margin-top: 828px;
+  margin-left: 49vw;
+  margin-top: 10vh;
   animation: twinkle-62 1s linear infinite;
   animation-delay: 0.62s;
 }
@@ -1417,15 +1417,15 @@
   }
 }
 .star:nth-child(63) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 775px;
-  margin-top: 582px;
+  margin-left: 88vw;
+  margin-top: 79vh;
   animation: twinkle-63 1s linear infinite;
   animation-delay: 0.63s;
 }
@@ -1446,8 +1446,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1297px;
-  margin-top: 554px;
+  margin-left: 2vw;
+  margin-top: 96vh;
   animation: twinkle-64 1s linear infinite;
   animation-delay: 0.64s;
 }
@@ -1468,8 +1468,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 666px;
-  margin-top: 837px;
+  margin-left: 46vw;
+  margin-top: 33vh;
   animation: twinkle-65 1s linear infinite;
   animation-delay: 0.65s;
 }
@@ -1490,8 +1490,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 339px;
-  margin-top: 851px;
+  margin-left: 30vw;
+  margin-top: 78vh;
   animation: twinkle-66 1s linear infinite;
   animation-delay: 0.66s;
 }
@@ -1512,8 +1512,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1111px;
-  margin-top: 30px;
+  margin-left: 76vw;
+  margin-top: 1vh;
   animation: twinkle-67 1s linear infinite;
   animation-delay: 0.67s;
 }
@@ -1534,8 +1534,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 162px;
-  margin-top: 39px;
+  margin-left: 42vw;
+  margin-top: 26vh;
   animation: twinkle-68 1s linear infinite;
   animation-delay: 0.68s;
 }
@@ -1549,15 +1549,15 @@
   }
 }
 .star:nth-child(69) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 172px;
-  margin-top: 101px;
+  margin-left: 98vw;
+  margin-top: 78vh;
   animation: twinkle-69 1s linear infinite;
   animation-delay: 0.69s;
 }
@@ -1578,8 +1578,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 603px;
-  margin-top: 722px;
+  margin-left: 72vw;
+  margin-top: 19vh;
   animation: twinkle-70 1s linear infinite;
   animation-delay: 0.7s;
 }
@@ -1600,8 +1600,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 232px;
-  margin-top: 415px;
+  margin-left: 22vw;
+  margin-top: 96vh;
   animation: twinkle-71 1s linear infinite;
   animation-delay: 0.71s;
 }
@@ -1622,8 +1622,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 710px;
-  margin-top: 278px;
+  margin-left: 30vw;
+  margin-top: 56vh;
   animation: twinkle-72 1s linear infinite;
   animation-delay: 0.72s;
 }
@@ -1637,15 +1637,15 @@
   }
 }
 .star:nth-child(73) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 400px;
-  margin-top: 835px;
+  margin-left: 29vw;
+  margin-top: 1vh;
   animation: twinkle-73 1s linear infinite;
   animation-delay: 0.73s;
 }
@@ -1659,15 +1659,15 @@
   }
 }
 .star:nth-child(74) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 470px;
-  margin-top: 405px;
+  margin-left: 30vw;
+  margin-top: 62vh;
   animation: twinkle-74 1s linear infinite;
   animation-delay: 0.74s;
 }
@@ -1681,15 +1681,15 @@
   }
 }
 .star:nth-child(75) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 938px;
-  margin-top: 804px;
+  margin-left: 80vw;
+  margin-top: 96vh;
   animation: twinkle-75 1s linear infinite;
   animation-delay: 0.75s;
 }
@@ -1703,15 +1703,15 @@
   }
 }
 .star:nth-child(76) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 571px;
-  margin-top: 422px;
+  margin-left: 86vw;
+  margin-top: 52vh;
   animation: twinkle-76 1s linear infinite;
   animation-delay: 0.76s;
 }
@@ -1725,15 +1725,15 @@
   }
 }
 .star:nth-child(77) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 7px;
-  margin-top: 306px;
+  margin-left: 38vw;
+  margin-top: 68vh;
   animation: twinkle-77 1s linear infinite;
   animation-delay: 0.77s;
 }
@@ -1754,8 +1754,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 895px;
-  margin-top: 189px;
+  margin-left: 36vw;
+  margin-top: 93vh;
   animation: twinkle-78 1s linear infinite;
   animation-delay: 0.78s;
 }
@@ -1776,8 +1776,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 741px;
-  margin-top: 5px;
+  margin-left: 82vw;
+  margin-top: 96vh;
   animation: twinkle-79 1s linear infinite;
   animation-delay: 0.79s;
 }
@@ -1791,15 +1791,15 @@
   }
 }
 .star:nth-child(80) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 484px;
-  margin-top: 114px;
+  margin-left: 33vw;
+  margin-top: 24vh;
   animation: twinkle-80 1s linear infinite;
   animation-delay: 0.8s;
 }
@@ -1813,15 +1813,15 @@
   }
 }
 .star:nth-child(81) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 602px;
-  margin-top: 741px;
+  margin-left: 1vw;
+  margin-top: 64vh;
   animation: twinkle-81 1s linear infinite;
   animation-delay: 0.81s;
 }
@@ -1842,8 +1842,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 589px;
-  margin-top: 740px;
+  margin-left: 62vw;
+  margin-top: 79vh;
   animation: twinkle-82 1s linear infinite;
   animation-delay: 0.82s;
 }
@@ -1864,8 +1864,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 930px;
-  margin-top: 418px;
+  margin-left: 48vw;
+  margin-top: 86vh;
   animation: twinkle-83 1s linear infinite;
   animation-delay: 0.83s;
 }
@@ -1886,8 +1886,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 134px;
-  margin-top: 58px;
+  margin-left: 47vw;
+  margin-top: 26vh;
   animation: twinkle-84 1s linear infinite;
   animation-delay: 0.84s;
 }
@@ -1901,15 +1901,15 @@
   }
 }
 .star:nth-child(85) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 219px;
-  margin-top: 507px;
+  margin-left: 46vw;
+  margin-top: 81vh;
   animation: twinkle-85 1s linear infinite;
   animation-delay: 0.85s;
 }
@@ -1923,15 +1923,15 @@
   }
 }
 .star:nth-child(86) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1105px;
-  margin-top: 241px;
+  margin-left: 4vw;
+  margin-top: 58vh;
   animation: twinkle-86 1s linear infinite;
   animation-delay: 0.86s;
 }
@@ -1945,15 +1945,15 @@
   }
 }
 .star:nth-child(87) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 584px;
-  margin-top: 169px;
+  margin-left: 59vw;
+  margin-top: 6vh;
   animation: twinkle-87 1s linear infinite;
   animation-delay: 0.87s;
 }
@@ -1967,15 +1967,15 @@
   }
 }
 .star:nth-child(88) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 508px;
-  margin-top: 734px;
+  margin-left: 28vw;
+  margin-top: 77vh;
   animation: twinkle-88 1s linear infinite;
   animation-delay: 0.88s;
 }
@@ -1989,15 +1989,15 @@
   }
 }
 .star:nth-child(89) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1208px;
-  margin-top: 804px;
+  margin-left: 9vw;
+  margin-top: 14vh;
   animation: twinkle-89 1s linear infinite;
   animation-delay: 0.89s;
 }
@@ -2011,15 +2011,15 @@
   }
 }
 .star:nth-child(90) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 252px;
-  margin-top: 84px;
+  margin-left: 73vw;
+  margin-top: 1vh;
   animation: twinkle-90 1s linear infinite;
   animation-delay: 0.9s;
 }
@@ -2040,8 +2040,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 986px;
-  margin-top: 299px;
+  margin-left: 69vw;
+  margin-top: 37vh;
   animation: twinkle-91 1s linear infinite;
   animation-delay: 0.91s;
 }
@@ -2062,8 +2062,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 428px;
-  margin-top: 372px;
+  margin-left: 57vw;
+  margin-top: 13vh;
   animation: twinkle-92 1s linear infinite;
   animation-delay: 0.92s;
 }
@@ -2077,15 +2077,15 @@
   }
 }
 .star:nth-child(93) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 875px;
-  margin-top: 140px;
+  margin-left: 75vw;
+  margin-top: 64vh;
   animation: twinkle-93 1s linear infinite;
   animation-delay: 0.93s;
 }
@@ -2099,15 +2099,15 @@
   }
 }
 .star:nth-child(94) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1170px;
-  margin-top: 298px;
+  margin-left: 68vw;
+  margin-top: 81vh;
   animation: twinkle-94 1s linear infinite;
   animation-delay: 0.94s;
 }
@@ -2121,15 +2121,15 @@
   }
 }
 .star:nth-child(95) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1181px;
-  margin-top: 631px;
+  margin-left: 77vw;
+  margin-top: 57vh;
   animation: twinkle-95 1s linear infinite;
   animation-delay: 0.95s;
 }
@@ -2143,15 +2143,15 @@
   }
 }
 .star:nth-child(96) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1115px;
-  margin-top: 762px;
+  margin-left: 53vw;
+  margin-top: 33vh;
   animation: twinkle-96 1s linear infinite;
   animation-delay: 0.96s;
 }
@@ -2172,8 +2172,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 410px;
-  margin-top: 227px;
+  margin-left: 76vw;
+  margin-top: 19vh;
   animation: twinkle-97 1s linear infinite;
   animation-delay: 0.97s;
 }
@@ -2187,15 +2187,15 @@
   }
 }
 .star:nth-child(98) {
-  width: 2px;
-  height: 2px;
+  width: 1px;
+  height: 1px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 398px;
-  margin-top: 855px;
+  margin-left: 73vw;
+  margin-top: 16vh;
   animation: twinkle-98 1s linear infinite;
   animation-delay: 0.98s;
 }
@@ -2209,15 +2209,15 @@
   }
 }
 .star:nth-child(99) {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   z-index: 1;
   background: white;
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 120px;
-  margin-top: 718px;
+  margin-left: 78vw;
+  margin-top: 70vh;
   animation: twinkle-99 1s linear infinite;
   animation-delay: 0.99s;
 }
@@ -2238,8 +2238,8 @@
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 121px;
-  margin-top: 671px;
+  margin-left: 18vw;
+  margin-top: 95vh;
   animation: twinkle-100 1s linear infinite;
   animation-delay: 1s;
 }

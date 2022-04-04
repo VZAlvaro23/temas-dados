@@ -78,7 +78,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="stars">
+        {/* <div className="stars">
           <div className="star"></div>
           <div className="star"></div>
           <div className="star"></div>
@@ -179,11 +179,11 @@ function App() {
           <div className="star"></div>
           <div className="star"></div>
           <div className="star"></div>
-        </div>
-        <div className="shooting-stars"></div>
+        </div> */}
+        {/* <div className="shooting-stars"></div> */}
         {/* <Menu isActive={isActive} setIsActive={setIsActive} /> */}
         <header>
-          <h1 className="title">"TEMASa DADOS"</h1>
+          <h1 className="title">"TEMAS DADOS"</h1>
         </header>
         <main>
           <Routes>
